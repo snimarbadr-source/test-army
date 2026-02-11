@@ -3,120 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>تحديث مركز عمليات الجيش</title>
-  <style>
-    :root {
-      --bg-dark: #0b0805;
-      --army-gold: #d8b24a;
-      --army-green: #1a1f16;
-      --text-color: #f7f2e6;
-      --card-bg: rgba(13, 10, 7, 0.85);
-      --border: rgba(216, 178, 74, 0.3);
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-color);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      overflow-x: hidden;
-    }
-
-    /* --- الإنترو السينمائي (5 ثوانٍ) --- */
-    #army-intro {
-      position: fixed; inset: 0; background: #000; z-index: 9999;
-      display: flex; justify-content: center; align-items: center; flex-direction: column;
-      animation: fadeOutIntro 1s ease 5s forwards;
-    }
-    .intro-content { text-align: center; position: relative; }
-    .intro-logo { width: 200px; filter: drop-shadow(0 0 20px var(--army-gold)); animation: pulseLogo 2s infinite alternate; }
-    .intro-title { color: var(--army-gold); font-size: 2.5rem; margin-top: 20px; text-shadow: 0 0 15px var(--army-gold); }
-    .scanner { width: 100%; height: 3px; background: var(--army-gold); position: absolute; top: 0; animation: scan 3s infinite linear; box-shadow: 0 0 15px var(--army-gold); }
-
-    /* --- الخلفية الديناميكية --- */
-    .army-bg { position: fixed; inset: 0; z-index: -1; background: radial-gradient(circle, var(--army-green) 0%, #000 100%); }
-    .grid-pattern { position: absolute; width: 200%; height: 200%; background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px); background-size: 50px 50px; transform: perspective(500px) rotateX(60deg); animation: gridMove 20s linear infinite; }
-
-    /* --- الواجهة الرئيسية --- */
-    .wrapper { max-width: 1400px; margin: 0 auto; padding: 20px; }
-    header { 
-      display: flex; justify-content: space-between; align-items: center; 
-      padding: 20px; background: var(--card-bg); border: 2px solid var(--army-gold); 
-      border-radius: 15px; margin-bottom: 20px; backdrop-filter: blur(10px);
-    }
-    
-    .patch-notes {
-      background: rgba(216, 178, 74, 0.1); border-right: 4px solid var(--army-gold);
-      padding: 15px; margin-bottom: 20px; border-radius: 5px;
-    }
-    .patch-notes h4 { color: var(--army-gold); margin-bottom: 5px; }
-
-    main { display: grid; grid-template-columns: 1fr 350px; gap: 20px; }
-    .lanes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
-    .lane { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 15px; min-height: 250px; }
-    .lane-title { color: var(--army-gold); text-align: center; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 15px; }
-
-    /* ممرات السحب والإفلات */
-    .unit-list { min-height: 150px; border: 1px dashed rgba(216,178,74,0.2); border-radius: 8px; padding: 10px; }
-    .unit-card { background: #1a1a1a; border: 1px solid var(--border); padding: 10px; margin-bottom: 8px; border-radius: 5px; cursor: grab; display: flex; justify-content: space-between; }
-    
-    /* الجانب الأيمن */
-    aside { background: var(--card-bg); border: 1px solid var(--army-gold); padding: 20px; border-radius: 12px; height: fit-content; }
-    textarea { width: 100%; background: #000; color: var(--army-gold); border: 1px solid var(--border); padding: 10px; font-family: monospace; resize: none; margin-top: 10px; }
-    input { width: 100%; padding: 10px; background: #111; border: 1px solid var(--border); color: #fff; margin-bottom: 10px; }
-    button { width: 100%; padding: 12px; background: var(--army-gold); color: #000; border: none; font-weight: bold; cursor: pointer; border-radius: 5px; transition: 0.3s; }
-    button:hover { background: #f1d58a; }
-
-    /* الأنيميشن */
-    @keyframes fadeOutIntro { to { opacity: 0; visibility: hidden; } }
-    @keyframes scan { 0% { top: 0; } 100% { top: 100%; } }
-    @keyframes gridMove { from { transform: perspective(500px) rotateX(60deg) translateY(0); } to { transform: perspective(500px) rotateX(60deg) translateY(50px); } }
-    @keyframes pulseLogo { from { transform: scale(1); } to { transform: scale(1.05); } }
-  </style>
+  <title>تحديث مركز العمليات للجيش</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div id="army-intro">
-    <div class="intro-content">
-      <div class="scanner"></div>
-      <img src="21.png" class="intro-logo" alt="Logo">
-      <h1 class="intro-title">تحديث مركز عمليات الجيش</h1>
+  <div id="intro-screen">
+    <div class="intro-box">
+      <div class="laser-scan"></div>
+      <img src="21.png" class="intro-logo">
+      <h1 class="glitch-text" data-text="تحديث مركز العمليات للجيش">تحديث مركز العمليات للجيش</h1>
+      <div class="loading-bar"><div class="progress"></div></div>
     </div>
   </div>
 
-  <div class="army-bg"><div class="grid-pattern"></div></div>
+  <div class="army-background">
+    <div class="radar-circle"></div>
+    <div class="grid-overlay"></div>
+  </div>
 
-  <div class="wrapper">
+  <div class="main-content">
     <header>
-      <img src="21.png" width="70" alt="Logo">
-      <h1 style="color: var(--army-gold);">مركز العمليات التكتيكي</h1>
-      <img src="21.png" width="70" alt="Logo">
+      <img src="21.png" class="header-logo">
+      <div class="header-titles">
+        <h2>القوات المسلحة</h2>
+        <p>مركز العمليات التكتيكي (TOC)</p>
+      </div>
+      <img src="21.png" class="header-logo">
     </header>
 
-    <div class="patch-notes">
-      <h4>📦 باتش نوت (Patch Notes):</h4>
-      <p>• تم تغيير أسماء نقاط التوزيع بالكامل.</p>
-      <p>• تم تغيير الخلفية وإضافة إنترو سينمائي مبهر.</p>
-      <p>• تحسين نظام التقارير التلقائية.</p>
-    </div>
+    <section class="patch-notes">
+      <h3>📋 باتش نوت (Patch Notes)</h3>
+      <ul>
+        <li>تم تحديث أسماء نقاط التوزيع (الأوتيل، بوليتو، لوس، إلخ).</li>
+        <li>إضافة خلفية رادار ديناميكية وإنترو ليزر احترافي.</li>
+        <li>تفعيل نظام السحب والإفلات للوحدات وتحديث التقارير لحظياً.</li>
+      </ul>
+    </section>
 
-    <main>
-      <div id="lanesContainer" class="lanes-grid">
+    <main class="dashboard">
+      <div class="left-panel">
+        <div class="lane-box default-pool">
+          <h3 class="lane-title">قائمة الوحدات المتوفرة</h3>
+          <div class="drop-zone" id="default-lane" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
         </div>
 
-      <aside>
-        <h3 style="color:var(--army-gold); margin-bottom:15px;">إصدار التقرير النهائي</h3>
-        <label>اسم الضابط:</label>
-        <input type="text" id="officerName" placeholder="أدخل اسمك هنا...">
-        
-        <label>إضافة وحدة جديدة:</label>
-        <input type="text" id="newUnitInput" placeholder="رقم الوحدة + الاسم (اضغط Enter)" onkeypress="handleNewUnit(event)">
+        <div class="lanes-grid" id="lanes-grid">
+          </div>
+      </div>
 
-        <label>التقرير الجاهز:</label>
-        <textarea id="finalReport" rows="15" readonly></textarea>
-        
-        <button onclick="copyReport()" style="margin-top:10px;">نسخ التقرير العسكري</button>
-        <button onclick="clearAll()" style="margin-top:10px; background:#631a1a; color:#fff;">تصفير البيانات</button>
+      <aside class="right-panel">
+        <div class="form-group">
+          <h3>بيانات العمليات</h3>
+          <input type="text" id="op_name" placeholder="اسم العمليات..." oninput="updateReport()">
+          <input type="text" id="op_deputy" placeholder="نائب العمليات..." oninput="updateReport()">
+          <input type="text" id="op_leaders" placeholder="القيادات..." oninput="updateReport()">
+          <input type="text" id="op_officers" placeholder="الضباط..." oninput="updateReport()">
+          <textarea id="op_nco" placeholder="ضباط الصف (P301 P332...)" oninput="updateReport()"></textarea>
+          <input type="text" id="op_manager" placeholder="مسؤول الفترة..." oninput="updateReport()">
+        </div>
+
+        <div class="time-controls">
+          <button class="btn-time" onclick="setTime('start')">⏱ بدء استلام</button>
+          <button class="btn-time" onclick="setTime('end')">🏁 إنهاء استلام</button>
+        </div>
+
+        <div class="report-area">
+          <textarea id="finalText" readonly></textarea>
+          <button class="btn-copy" onclick="copyReport()">نسخ التقرير النهائي</button>
+        </div>
       </aside>
     </main>
   </div>
