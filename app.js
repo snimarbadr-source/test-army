@@ -1,125 +1,73 @@
-"use strict";
-
-// الأسماء الجديدة للنقاط حسب طلبك
-const LANES = [
-  { id: "hotel", title: "نقاط وحدات أعلى الأوتيل" },
-  { id: "paleto", title: "نقاط وحدات نقطة بوليتو" },
-  { id: "loss", title: "نقاط وحدات نقطة لوس" },
-  { id: "electricity", title: "نقاط وحدات نقطة الكهرب" },
-  { id: "grapeseed", title: "نقاط وحدات ثغرة قرابسيد" }
-];
-
-let unitsData = JSON.parse(localStorage.getItem('armyUnits')) || [];
-
-function init() {
-  const container = document.getElementById("lanesContainer");
-  container.innerHTML = "";
-
-  LANES.forEach(lane => {
-    const laneDiv = document.createElement("div");
-    laneDiv.className = "lane";
-    laneDiv.setAttribute("ondrop", `drop(event, '${lane.id}')`);
-    laneDiv.setAttribute("ondragover", "allowDrop(event)");
-    
-    laneDiv.innerHTML = `
-      <h3 class="lane-title">${lane.title}</h3>
-      <div id="list-${lane.id}" class="unit-list"></div>
-    `;
-    container.appendChild(laneDiv);
-  });
-  
-  renderUnits();
-  updateReport();
+:root {
+  --gold: #d8b24a;
+  --bg-black: #050604;
+  --army-green: #1a1f16;
+  --glass: rgba(20, 25, 15, 0.9);
+  --border: rgba(216, 178, 74, 0.3);
 }
 
-function renderUnits() {
-  // مسح القوائم أولاً
-  LANES.forEach(l => document.getElementById(`list-${l.id}`).innerHTML = "");
-
-  unitsData.forEach(unit => {
-    const list = document.getElementById(`list-${unit.laneId}`);
-    if (list) {
-      const card = document.createElement("div");
-      card.className = "unit-card";
-      card.draggable = true;
-      card.id = unit.id;
-      card.setAttribute("ondragstart", "drag(event)");
-      card.innerHTML = `
-        <span>• ${unit.name}</span>
-        <span style="color:#ff4444; cursor:pointer;" onclick="deleteUnit('${unit.id}')">✖</span>
-      `;
-      list.appendChild(card);
-    }
-  });
+body {
+  margin: 0; padding: 0; background: var(--bg-black);
+  color: #fff; font-family: 'Segoe UI', sans-serif; overflow-x: hidden;
 }
 
-// وظائف السحب والإفلات
-function allowDrop(ev) { ev.preventDefault(); }
-function drag(ev) { ev.dataTransfer.setData("text", ev.target.id); }
-function drop(ev, laneId) {
-  ev.preventDefault();
-  const unitId = ev.dataTransfer.getData("text");
-  const unitIndex = unitsData.findIndex(u => u.id == unitId);
-  if (unitIndex !== -1) {
-    unitsData[unitIndex].laneId = laneId;
-    saveAndRefresh();
-  }
+/* --- Intro --- */
+#intro-screen {
+  position: fixed; inset: 0; background: #000; z-index: 9999;
+  display: flex; justify-content: center; align-items: center;
+  animation: fadeOut 1s forwards 5s;
+}
+.intro-box { text-align: center; position: relative; }
+.intro-logo { width: 180px; filter: drop-shadow(0 0 15px var(--gold)); margin-bottom: 20px; }
+.laser-scan {
+  position: absolute; width: 100%; height: 2px; background: var(--gold);
+  box-shadow: 0 0 20px var(--gold); animation: scan 2s infinite linear;
+}
+.loading-bar { width: 300px; height: 4px; background: #222; margin: 20px auto; }
+.progress { width: 0%; height: 100%; background: var(--gold); animation: load 4.5s linear forwards; }
+
+/* --- Background --- */
+.army-background { position: fixed; inset: 0; z-index: -2; overflow: hidden; }
+.grid-overlay {
+  position: absolute; width: 200%; height: 200%;
+  background-image: linear-gradient(var(--border) 1px, transparent 1px), 
+                    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 50px 50px; transform: rotateX(60deg) translateY(-10%);
+  animation: moveGrid 15s linear infinite;
+}
+.radar-circle {
+  position: absolute; top: 50%; left: 50%; width: 600px; height: 600px;
+  border: 1px solid var(--border); border-radius: 50%; transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(216,178,74,0.05) 0%, transparent 70%);
 }
 
-function handleNewUnit(e) {
-  if (e.key === "Enter" && e.target.value.trim() !== "") {
-    const newUnit = {
-      id: "u_" + Date.now(),
-      name: e.target.value.trim(),
-      laneId: LANES[0].id // تضاف لأول نقطة افتراضياً
-    };
-    unitsData.push(newUnit);
-    e.target.value = "";
-    saveAndRefresh();
-  }
+/* --- Layout --- */
+.main-content { padding: 20px; opacity: 0; animation: fadeIn 1s forwards 5.5s; }
+header {
+  display: flex; justify-content: space-between; align-items: center;
+  background: var(--glass); border: 2px solid var(--gold); padding: 15px;
+  border-radius: 10px; margin-bottom: 20px; backdrop-filter: blur(10px);
+}
+.header-logo { width: 60px; }
+.dashboard { display: grid; grid-template-columns: 1fr 400px; gap: 20px; }
+
+.lane-box { background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 10px; }
+.lane-title { color: var(--gold); border-bottom: 1px solid var(--border); padding-bottom: 5px; margin-bottom: 10px; }
+.drop-zone { min-height: 80px; display: flex; flex-wrap: wrap; gap: 8px; padding: 10px; border: 1px dashed #444; }
+
+.unit-card {
+  background: #2a2d24; border: 1px solid var(--gold); padding: 5px 12px;
+  border-radius: 4px; cursor: grab; font-weight: bold; font-size: 0.9rem;
 }
 
-function deleteUnit(id) {
-  unitsData = unitsData.filter(u => u.id !== id);
-  saveAndRefresh();
-}
+/* --- Animations --- */
+@keyframes scan { 0% { top: 0; } 100% { top: 100%; } }
+@keyframes load { 0% { width: 0; } 100% { width: 100%; } }
+@keyframes fadeOut { to { opacity: 0; visibility: hidden; } }
+@keyframes fadeIn { to { opacity: 1; } }
+@keyframes moveGrid { from { transform: perspective(500px) rotateX(60deg) translateY(0); } to { transform: perspective(500px) rotateX(60deg) translateY(50px); } }
 
-function saveAndRefresh() {
-  localStorage.setItem('armyUnits', JSON.stringify(unitsData));
-  renderUnits();
-  updateReport();
-}
-
-function updateReport() {
-  const officer = document.getElementById("officerName").value || "لم يحدد";
-  let report = `📋 **تقرير تحديث مركز عمليات الجيش**\n`;
-  report += `━━━━━━━━━━━━━━━━━\n`;
-  
-  LANES.forEach(lane => {
-    const laneUnits = unitsData.filter(u => u.laneId === lane.id).map(u => u.name).join(" - ");
-    report += `🔹 ${lane.title}:\n   [ ${laneUnits || "لا يوجد وحدات"} ]\n\n`;
-  });
-
-  report += `━━━━━━━━━━━━━━━━━\n`;
-  report += `👤 الضابط المستلم: ${officer}\n`;
-  report += `⏰ تاريخ التحديث: ${new Date().toLocaleString('ar-EG')}`;
-  
-  document.getElementById("finalReport").value = report;
-}
-
-function copyReport() {
-  const reportText = document.getElementById("finalReport");
-  reportText.select();
-  document.execCommand("copy");
-  alert("✅ تم نسخ التقرير العسكري بنجاح!");
-}
-
-function clearAll() {
-  if(confirm("هل أنت متأكد من تصفير جميع الوحدات؟")) {
-    unitsData = [];
-    saveAndRefresh();
-  }
-}
-
-document.getElementById("officerName").addEventListener("input", updateReport);
-window.onload = init;
+/* Inputs & Buttons */
+input, textarea { width: 100%; padding: 10px; background: #000; border: 1px solid var(--border); color: var(--gold); margin-bottom: 8px; }
+.btn-time { background: #1a1f16; color: var(--gold); border: 1px solid var(--gold); padding: 10px; cursor: pointer; font-weight: bold; width: 48%; }
+.btn-copy { background: var(--gold); color: #000; font-weight: bold; width: 100%; padding: 12px; border: none; cursor: pointer; margin-top: 10px; }
