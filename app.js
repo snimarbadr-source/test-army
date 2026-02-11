@@ -1,8 +1,5 @@
 "use strict";
 
-const $ = (sel) => document.querySelector(sel);
-
-// تحديث النقاط حسب طلبك
 const LANES = [
   { id: "hotel", title: "نقاط وحدات أعلى الأوتيل" },
   { id: "paleto", title: "نقاط وحدات نقطة بوليتو" },
@@ -11,58 +8,58 @@ const LANES = [
   { id: "grapeseed", title: "نقاط وحدات ثغرة قرابسيد" }
 ];
 
-function initApp() {
-  const lanesContainer = $("#lanes");
-  lanesContainer.innerHTML = "";
+function init() {
+  const container = document.getElementById("lanesContainer");
+  container.innerHTML = "";
 
   LANES.forEach(lane => {
-    const laneDiv = document.createElement("div");
-    laneDiv.className = "lane";
-    laneDiv.innerHTML = `
+    const div = document.createElement("div");
+    div.className = "lane";
+    div.innerHTML = `
       <h3 class="lane-title">${lane.title}</h3>
-      <div id="units-${lane.id}" class="unit-list">
-        <input type="text" placeholder="أضف وحدة هنا..." 
-               onkeypress="if(event.key==='Enter') addUnit('${lane.id}', this.value); if(event.key==='Enter') this.value='';" 
-               style="width:100%; background:#222; border:1px solid #444; color:#fff; padding:5px;">
-        <ul id="list-${lane.id}" style="list-style:none; margin-top:10px; color:#ccc;"></ul>
-      </div>
+      <input type="text" placeholder="اسم الوحدة + الرقم..." onkeypress="handleEntry(event, '${lane.id}')">
+      <div id="list-${lane.id}" style="margin-top:10px"></div>
     `;
-    lanesContainer.appendChild(laneDiv);
+    container.appendChild(div);
   });
 }
 
-function addUnit(laneId, unitName) {
-  if(!unitName) return;
-  const list = $(`#list-${laneId}`);
-  const li = document.createElement("li");
-  li.textContent = `- ${unitName}`;
-  li.style.padding = "3px 0";
-  list.appendChild(li);
-  updateReport();
+function handleEntry(e, laneId) {
+  if (e.key === "Enter" && e.target.value.trim() !== "") {
+    const val = e.target.value.trim();
+    const list = document.getElementById(`list-${laneId}`);
+    const item = document.createElement("div");
+    item.style.padding = "5px";
+    item.style.borderBottom = "1px solid rgba(216,178,74,0.1)";
+    item.innerHTML = `• ${val} <span style="color:red; cursor:pointer; float:left" onclick="this.parentElement.remove(); updateReport();">✖</span>`;
+    list.appendChild(item);
+    e.target.value = "";
+    updateReport();
+  }
 }
 
 function updateReport() {
-  let report = "📋 **تقرير تحديث مركز العمليات للجيش**\n\n";
+  let report = "🪖 **تقرير تحديث مركز عمليات الجيش**\n";
+  report += "----------------------------------\n";
+  
   LANES.forEach(lane => {
-    const units = Array.from($(`#list-${lane.id}`).children).map(li => li.textContent).join(" ");
-    report += `🔹 ${lane.title}: ${units || "لا يوجد"}\n`;
+    const items = Array.from(document.getElementById(`list-${lane.id}`).children);
+    const names = items.map(i => i.innerText.replace("✖", "").trim()).join(" - ");
+    report += `🔹 ${lane.title}: ${names || "لا يوجد"}\n`;
   });
+
+  const officer = document.getElementById("officerName").value;
+  if (officer) report += `\n👤 المستلم: ${officer}`;
   
-  const handover = $("#handoverTo").value;
-  if(handover) report += `\n👤 المستلم: ${handover}`;
-  
-  $("#finalText").value = report;
+  document.getElementById("finalReport").value = report;
 }
 
 function copyReport() {
-  const textArea = $("#finalText");
-  textArea.select();
+  const copyText = document.getElementById("finalReport");
+  copyText.select();
   document.execCommand("copy");
-  alert("تم نسخ التقرير بنجاح!");
+  alert("تم نسخ التقرير العسكري!");
 }
 
-// تشغيل عند التحميل
-document.addEventListener("DOMContentLoaded", () => {
-  initApp();
-  $("#handoverTo").addEventListener("input", updateReport);
-});
+document.getElementById("officerName").addEventListener("input", updateReport);
+window.onload = init;
