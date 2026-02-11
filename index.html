@@ -1,82 +1,35 @@
+
 <!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>تحديث مركز العمليات للجيش</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
 
-  <div id="intro-screen">
-    <div class="intro-box">
-      <div class="laser-scan"></div>
-      <img src="21.png" class="intro-logo">
-      <h1 class="glitch-text" data-text="تحديث مركز العمليات للجيش">تحديث مركز العمليات للجيش</h1>
-      <div class="loading-bar"><div class="progress"></div></div>
-    </div>
-  </div>
+    <meta property="og:title" content="تحديث مركز العمليات" />
+    <meta property="og:description" content="تحديثات الجيش والوحدات العسكرية" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@replit" />
+    <meta name="twitter:title" content="تحديث مركز العمليات" />
+    <meta
+      name="twitter:description"
+      content="تحديثات الجيش والوحدات العسكرية"
+    />
 
-  <div class="army-background">
-    <div class="radar-circle"></div>
-    <div class="grid-overlay"></div>
-  </div>
-
-  <div class="main-content">
-    <header>
-      <img src="21.png" class="header-logo">
-      <div class="header-titles">
-        <h2>القوات المسلحة</h2>
-        <p>مركز العمليات التكتيكي (TOC)</p>
-      </div>
-      <img src="21.png" class="header-logo">
-    </header>
-
-    <section class="patch-notes">
-      <h3>📋 باتش نوت (Patch Notes)</h3>
-      <ul>
-        <li>تم تحديث أسماء نقاط التوزيع (الأوتيل، بوليتو، لوس، إلخ).</li>
-        <li>إضافة خلفية رادار ديناميكية وإنترو ليزر احترافي.</li>
-        <li>تفعيل نظام السحب والإفلات للوحدات وتحديث التقارير لحظياً.</li>
-      </ul>
-    </section>
-
-    <main class="dashboard">
-      <div class="left-panel">
-        <div class="lane-box default-pool">
-          <h3 class="lane-title">قائمة الوحدات المتوفرة</h3>
-          <div class="drop-zone" id="default-lane" ondrop="drop(event)" ondragover="allowDrop(event)">
-            </div>
-        </div>
-
-        <div class="lanes-grid" id="lanes-grid">
-          </div>
-      </div>
-
-      <aside class="right-panel">
-        <div class="form-group">
-          <h3>بيانات العمليات</h3>
-          <input type="text" id="op_name" placeholder="اسم العمليات..." oninput="updateReport()">
-          <input type="text" id="op_deputy" placeholder="نائب العمليات..." oninput="updateReport()">
-          <input type="text" id="op_leaders" placeholder="القيادات..." oninput="updateReport()">
-          <input type="text" id="op_officers" placeholder="الضباط..." oninput="updateReport()">
-          <textarea id="op_nco" placeholder="ضباط الصف (P301 P332...)" oninput="updateReport()"></textarea>
-          <input type="text" id="op_manager" placeholder="مسؤول الفترة..." oninput="updateReport()">
-        </div>
-
-        <div class="time-controls">
-          <button class="btn-time" onclick="setTime('start')">⏱ بدء استلام</button>
-          <button class="btn-time" onclick="setTime('end')">🏁 إنهاء استلام</button>
-        </div>
-
-        <div class="report-area">
-          <textarea id="finalText" readonly></textarea>
-          <button class="btn-copy" onclick="copyReport()">نسخ التقرير النهائي</button>
-        </div>
-      </aside>
-    </main>
-  </div>
-
-  <script src="app.js"></script>
-</body>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Cairo for Arabic, Oxanium for futuristic/military English numbers/headers -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
