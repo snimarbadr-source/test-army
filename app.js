@@ -1,22 +1,212 @@
-/* تحديث مركز عمليات الجيش - النسخة المحدثة
-   - النقاط الجديدة فقط
-   - شعارات عسكرية متحركة (النسر التكتيكي) بجانب العنوان.
-   - أنيميشن الرادار ومسح الليزر الاحترافي.
-   - التوزيع المنفصل الذكي (طول/عرض/فواصل).
+
+
+army-updates-respect-main.zip
+zip
+
+انا اريد ان تبدل توزيع نقاط كذلك النموذج  تبدل الاسماء القديمة وتضع فقط هذا وعطني الكود كامل 
+
+اعلى الاوتيل نقطة بوليتو نقطة لوس نقطة الكهرب ثغرة قرابسيد
+
+11:14 PM
+سأقوم بفحص الملف المرفوع أولاً لفهم البنية الحالية ثم تعديلها حسب طلبك.
+
+
+Ran 2 commands, viewed 2 files
+الآن فهمت! تريد تغيير النقاط إلى:
+
+اعلى الاوتيل نقطة
+بوليتو نقطة
+لوس نقطة
+الكهرب ثغرة
+قرابسيد
+سأقوم بتعديل الكود الآن:
+
+
+Created a file, read a file
+تم التعديل بنجاح! ✅
+
+التغييرات التي تمت:
+
+تم استبدال النقاط القديمة (9 نقاط) بالنقاط الجديدة (5 نقاط) كالتالي:
+
+اعلى الاوتيل نقطة
+بوليتو نقطة
+لوس نقطة
+الكهرب ثغرة
+قرابسيد
+جميع وظائف النظام تعمل بشكل طبيعي مع النقاط الجديدة فقط، بما في ذلك:
+
+السحب والإفلات بين النقاط
+التوزيع التلقائي
+النقل السريع
+التقرير النهائي
+App
+JS 
+111.jpg
+في مشكلة في انترو اريد تبدل انترو تجعله شي دينماكي ومبهرا جدا وخورافي ومناسب للجيش والعنوان و انترو يصير تحديث مركز العمليات للجيش وبدل شعار في الملف الاصلي الى هذا مرسل اليك
+
+11:24 PM
+سأقوم بإنشاء مقدمة (intro) ديناميكية ومبهرة للجيش مع استخدام الشعار الجديد!
+
+
+فحص ملف HTML لرؤية الـ intro الحالي
+الآن سأقوم بإنشاء intro ديناميكي خرافي! سأنسخ الشعار الجديد أولاً:
+
+
+نسخ الشعار الجديد
+الآن سأقوم بإنشاء ملف HTML محدث مع intro ديناميكي خرافي:
+
+
+Created a file, read a file
+تم إنشاء intro ديناميكي وخرافي بنجاح! 🎖️✨
+
+المميزات الجديدة في الـ Intro:
+🌟 تأثيرات بصرية مبهرة:
+موجات رادار دائرية تتوسع من المركز
+شبكة سداسية عسكرية متحركة في الخلفية
+نجوم متلألئة بتأثير خفقان
+حلقات مدارية دوارة حول الشعار (3 حلقات بسرعات مختلفة)
+ليزر ذهبي متحرك يمسح البطاقة
+زخارف ذهبية في الزوايا الأربع
+⚡ تأثيرات حركية:
+الشعار يطفو بحركة ناعمة مع دوران خفيف
+توهج نابض حول الشعار
+العنوان بتأثير لامع متحرك
+شريط تحميل ديناميكي بتأثير shimmer
+دخول تدريجي لجميع العناصر
+🎯 التفاصيل:
+العنوان: "تحديث مركز العمليات للجيش"
+العنوان الفرعي: "Sandy State Army • Military Unit"
+الشعار الجديد: تم استبداله بالشعار المرسل
+مدة العرض: 4 ثوانٍ (ثم يختفي تلقائياً)
+إمكانية الإغلاق: بالنقر في أي مكان
+📱 متجاوب تماماً:
+يعمل بشكل مثالي على الجوال والكمبيوتر
+تأثيرات محسّنة لجميع الأحجام
+الملفات جاهزة للاستخدام! 🚀
+
+Index
+Code · HTML 
+App
+JS 
+Army logo new
+Image · PNG 
+ازل كلام 
+army-updates-respect-main.zip zip انا اريد ان تبدل توزيع نقاط كذلك النموذج تبدل الاسماء القديمة وتضع فقط هذا وعطني الكود كامل اعلى الاوتيل نقطة بوليتو نقطة لوس نقطة الكهرب ثغرة قرابسيد 11:14 PM سأقوم بفحص الملف المرفوع أولاً لفهم البنية الحالية ثم تعديلها حسب طلبك. Ran 2 commands, viewed 2 files الآن فهمت! تريد تغيير النقاط إلى: اعلى الاوتيل نقطة بوليتو نقطة لوس نقطة الكهرب ثغرة قرابسيد سأقوم بتعديل الكود الآن: Created a file, read a file تم التعديل بنجاح! ✅ التغييرات التي تمت: تم استبدال النقاط القديمة (9 نقاط) بالنقاط الجديدة (5 نقاط) كالتالي: اعلى الاوتيل نقطة بوليتو نقطة لوس نقطة الكهرب ثغرة قرابسيد جميع وظائف النظام تعمل بشكل طبيعي مع النقاط الجديدة فقط، بما في ذلك: السحب والإفلات بين النقاط التوزيع التلقائي النقل السريع التقرير النهائي App JS 111.jpg في مشكلة في انترو اريد تبدل انترو تجعله شي دينماكي ومبهرا جدا وخورافي ومناسب للجيش والعنوان و انترو يصير تحديث مركز العمليات للجيش وبدل شعار في الملف الاصلي الى هذا مرسل اليك 11:24 PM سأقوم بإنشاء مقدمة (intro) ديناميكية ومبهرة للجيش مع استخدام الشعار الجديد! فحص ملف HTML لرؤية الـ intro الحالي الآن سأقوم بإنشاء intro ديناميكي خرافي! سأنسخ الشعار الجديد أولاً: نسخ الشعار الجديد الآن سأقوم بإنشاء ملف HTML محدث مع intro ديناميكي خرافي: Created a file, read a file تم إنشاء intro ديناميكي وخرافي بنجاح! 🎖️✨ المميزات الجديدة في الـ Intro: 🌟 تأثيرات بصرية مبهرة: موجات رادار دائرية تتوسع من المركز شبكة سداسية عسكرية متحركة في الخلفية نجوم متلألئة بتأثير خفقان حلقات مدارية دوارة حول الشعار (3 حلقات بسرعات مختلفة) ليزر ذهبي متحرك يمسح البطاقة زخارف ذهبية في الزوايا الأربع ⚡ تأثيرات حركية: الشعار يطفو بحركة ناعمة مع دوران خفيف توهج نابض حول الشعار العنوان بتأثير لامع متحرك شريط تحميل ديناميكي بتأثير shimmer دخول تدريجي لجميع العناصر 🎯 التفاصيل: العنوان: "تحديث مركز العمليات للجيش" العنوان الفرعي: "Sandy State Army • Military Unit" الشعار الجديد: تم استبداله بالشعار المرسل مدة العرض: 4 ثوانٍ (ثم يختفي تلقائياً) إمكانية الإغلاق: بالنقر في أي مكان 📱 متجاوب تماماً: يعمل بشكل مثالي على الجوال والكمبيوتر تأثيرات محسّنة لجميع الأحجام الملفات جاهزة للاستخدام! 🚀 Index Code · HTML App JS Army logo new Image · PNG Claude is AI and can make mistakes. Please double-check responses. Index · HTML Copy
+في الموقع 
+
+ايضا اريد انترو مختلف تمام عن الموقع دينماكي ومبهرا جدا وخورافي ومناسب للجيش والعنوان في انترو والموقع يكون تحديث مركز العليمات للجيش 
+
+اريد لي صورة او الملف الاصلي بكل تفاصيل ولكن اريد تصميم الموقع شي فخم ومبهرا جدا ومناسب للجيش حتى خلفية موقع تكون دينماكية متحركة مناسبة للجيش 
+
+الاسماء توزيع سحب وافلات و النموذج تكون  بالضبط هذا 
+
+نقاط وحدات اعلى الاوتيل
+نقاط وحدات بوليتو 
+نقاط وحدات لوس 
+نقاط وحدات ساندي 
+نقاط وحدات الكهرب 
+نقاط وحدات ثغرة قرابسيد  
+نفاط وحدات ثغرة البحيرة
+
+اريد باتش نوت يظهر بشكل احترافي ومناسب للجيش لمرة واحدة 
+تم تغير انترو وشعار 
+تم تحديث الاسماء مناطق 
+تم اعادة تصميم الموقع ومناسب للجيش 
+ايضا تم سلاسلة الموقع وتسهيل اكثر 
+
+اريد كل شي في الموقع ولكن بتصميم مختلف ومبهرا جدا وخورافي يعني النموذج الموجود اريده مثل ماهو فقط غير الاسماء
+
+Show more
+11:43 PM
+سأقوم بإنشاء موقع خرافي ومبهر بتصميم عسكري فخم مع جميع التحديثات المطلوبة! 🎖️
+
+
+Created 2 files, ran a command
+الآن سأقوم بإنشاء ملف JavaScript المحدث مع النقاط الجديدة:
+
+
+Ran a command, created a file, read a file
+تم الانتهاء بنجاح! 🎖️✨
+
+✅ ما تم إنجازه:
+🌟 تصميم فخم وخرافي للموقع:
+تصميم عسكري احترافي بألوان ذهبية وخضراء داكنة
+خلفية ديناميكية متحركة مع:
+شبكة عسكرية متحركة
+30 جزيء ذهبي متطاير
+موجات رادار دائرية تتوسع
+تأثيرات ضوئية ولمعان مستمر
+🎬 Intro خرافي وديناميكي:
+4 حلقات مدارية دوارة حول الشعار
+خطوط تصويب متقاطعة متحركة
+4 دوائر متموجة متوسعة
+شريط تحميل متوهج بتأثير shimmer
+الشعار الجديد مع توهج نابض
+عنوان بتأثير لامع متحرك
+يختفي تلقائياً بعد 4 ثوانٍ
+📋 Patch Notes احترافية:
+تظهر بعد اختفاء الـ Intro
+تعرض جميع التحديثات: ✨ تغيير Intro والشعار 📍 تحديث أسماء المناطق السبعة ⚡ تحسينات الأداء والسلاسة
+تصميم عسكري فخم بأيقونات ملونة
+📍 النقاط المحدثة (7 نقاط):
+نقاط وحدات اعلى الاوتيل
+نقاط وحدات بوليتو
+نقاط وحدات لوس
+نقاط وحدات ساندي
+نقاط وحدات الكهرب
+نقاط وحدات ثغرة قرابسيد
+نقاط وحدات ثغرة البحيرة
+🎨 التصميم:
+هيدر sticky فخم بشعارين متحركين
+بطاقات شفافة بحدود ذهبية وتأثيرات لمعان
+أزرار بتأثيرات موجية عند الضغط
+حقول إدخال بتوهج ذهبي عند التركيز
+بطاقات الوحدات بتأثيرات hover ناعمة
+رادار صغير نابض بجانب كل نقطة
+Scrollbar مخصص بتدرج ذهبي
+📱 متجاوب بالكامل:
+يعمل على الجوال والتابلت والكمبيوتر
+Sheet للموبايل لنقل الوحدات بسهولة
+تنسيق تلقائي حسب حجم الشاشة
+الملفات جاهزة للاستخدام! 🚀
+
+Index
+Code · HTML 
+App
+JS 
+Army logo new
+Image · PNG 
+
+
+You are out of free messages until 4:00 AM
+Upgrade
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+App · JS
+Copy
+
+/* تحديث مركز عمليات الجيش - الإصدار 2.0
+   - نظام توزيع الوحدات العسكرية
+   - Sandy State Army Military Unit
 */
 
 "use strict";
 
 const $ = (sel) => document.querySelector(sel);
-const STORAGE_KEY = "army_ops_v9_complete";
+const STORAGE_KEY = "army_ops_v2_complete";
 
-// القائمة الجديدة للنقاط
+// النقاط المحدثة - 7 نقاط
 const LANES = [
-  { id: "hotel_top", title: "اعلى الاوتيل نقطة" },
-  { id: "paleto", title: "بوليتو نقطة" },
-  { id: "los", title: "لوس نقطة" },
-  { id: "electric", title: "الكهرب ثغرة" },
-  { id: "crabside", title: "قرابسيد" }
+  { id: "hotel_top", title: "نقاط وحدات اعلى الاوتيل" },
+  { id: "paleto", title: "نقاط وحدات بوليتو" },
+  { id: "los", title: "نقاط وحدات لوس" },
+  { id: "sandy", title: "نقاط وحدات ساندي" },
+  { id: "electric", title: "نقاط وحدات الكهرب" },
+  { id: "crabside", title: "نقاط وحدات ثغرة قرابسيد" },
+  { id: "lake", title: "نقاط وحدات ثغرة البحيرة" }
 ];
 
 /* ---------- 1. إدارة البيانات ---------- */
@@ -28,65 +218,36 @@ function loadState() {
   
   // الحالة الافتراضية
   const initialState = {
-    form: { opsName: "", opsDeputy: "", leaders: "", officers: "", ncos: "", periodOfficer: "", notes: "", handoverTo: "", recvTime: "", handoverTime: "" },
+    form: { 
+      opsName: "", 
+      opsDeputy: "", 
+      leaders: "", 
+      officers: "", 
+      ncos: "", 
+      periodOfficer: "", 
+      notes: "", 
+      handoverTo: "", 
+      recvTime: "", 
+      handoverTime: "" 
+    },
     lanes: {}
   };
   LANES.forEach(l => initialState.lanes[l.id] = []);
   return initialState;
 }
 
-function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
-
-/* ---------- 2. الواجهة والأنيميشن العسكري ---------- */
-function injectMilitaryUI() {
-  const header = $(".headerMain");
-  if (header) {
-    header.innerHTML = `
-      <div class="army-logo logo-left"></div>
-      <h1 class="main-title">تحديث مركز العمليات</h1>
-      <div class="army-logo logo-right"></div>
-    `;
-  }
-
-  const style = document.createElement('style');
-  style.innerHTML = `
-    .headerMain { display: flex; align-items: center; justify-content: center; gap: 40px; padding: 25px; border-bottom: 2px solid var(--gold); background: rgba(0,0,0,0.2); }
-    .army-logo {
-      width: 70px; height: 70px;
-      background: url('https://cdn-icons-png.flaticon.com/512/2590/2590525.png'); 
-      background-size: contain; background-repeat: no-repeat;
-      filter: drop-shadow(0 0 15px var(--gold));
-      animation: logo-float 3s infinite ease-in-out;
-    }
-    .logo-right { transform: scaleX(-1); }
-    @keyframes logo-float { 0%, 100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-10px) scale(1.05); } }
-
-    .radar-container { position: relative; width: 18px; height: 18px; margin-left: 10px; display: inline-flex; align-items: center; justify-content: center; }
-    .radar-dot { width: 4px; height: 4px; background: var(--gold); border-radius: 50%; z-index: 2; }
-    .radar-pulse { position: absolute; width: 100%; height: 100%; border: 1.5px solid var(--gold); border-radius: 50%; animation: radar-anim 2s infinite linear; opacity: 0; }
-    @keyframes radar-anim { 0% { transform: scale(0.5); opacity: 1; } 100% { transform: scale(2.5); opacity: 0; } }
-
-    .laneHeader { position: relative; overflow: hidden; }
-    .laneHeader::after {
-      content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(216, 178, 74, 0.3), transparent);
-      animation: laser-line 4s infinite;
-    }
-    @keyframes laser-line { 0% { left: -100%; } 100% { left: 200%; } }
-
-    .unit-placeholder { height: 44px; background: rgba(216, 178, 74, 0.1); border: 2px dashed var(--gold); border-radius: 8px; margin: 5px 0; }
-    .unitCard.dragging { opacity: 0.1; }
-    .lane-active-effect { box-shadow: 0 0 30px var(--gold) !important; transition: 0.4s; }
-  `;
-  document.head.appendChild(style);
+function saveState() { 
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); 
 }
 
-/* ---------- 3. التوزيع والوحدات ---------- */
+/* ---------- 2. التوزيع والوحدات ---------- */
 function addUnit() {
   const firstLane = LANES[0].id;
   state.lanes[firstLane].unshift({ id: uid(), text: "" });
-  saveState(); renderBoard(); refreshFinalText(true);
-  toast("تمت إضافة وحدة فارغة", "إضافة");
+  saveState(); 
+  renderBoard(); 
+  refreshFinalText(true);
+  toast("تمت إضافة وحدة فارغة");
 }
 
 function processInputToUnits(rawText) {
@@ -100,33 +261,41 @@ function addExtractedLinesToLane(laneId) {
   const unitCodes = processInputToUnits(ta?.value || "");
   if (!unitCodes.length) return;
   unitCodes.forEach(code => state.lanes[laneId].push({ id: uid(), text: code }));
-  saveState(); renderBoard(); refreshFinalText(true);
+  saveState(); 
+  renderBoard(); 
+  refreshFinalText(true);
   playSuccessEffect(laneId);
   ta.value = ""; 
-  toast(`تم توزيع ${unitCodes.length} وحدة`, "نجاح");
+  toast(`تم توزيع ${unitCodes.length} وحدة`);
 }
 
-/* ---------- 4. السحب والإفلات واللوحة ---------- */
+/* ---------- 3. السحب والإفلات واللوحة ---------- */
 let dragging = { cardId: null, fromLane: null };
 const placeholder = document.createElement("div");
 placeholder.className = "unit-placeholder";
+placeholder.style.cssText = "height: 44px; background: rgba(212, 175, 55, 0.1); border: 2px dashed #d4af37; border-radius: 8px; margin: 5px 0;";
 
 function renderBoard() {
-  const board = $("#board"); if (!board) return;
+  const board = $("#board"); 
+  if (!board) return;
   board.innerHTML = "";
+  
   for (const lane of LANES) {
     const laneEl = document.createElement("div");
     laneEl.className = "lane";
     laneEl.dataset.laneId = lane.id;
     laneEl.innerHTML = `
-      <div class="laneHeader">
-        <div class="radar-container"><div class="radar-dot"></div><div class="radar-pulse"></div></div>
-        <div class="laneTitle">${lane.title}</div>
-        <div class="laneCount">${state.lanes[lane.id]?.length || 0}</div>
+      <div class="lane-header">
+        <div class="lane-title">
+          <div class="lane-radar"></div>
+          <span>${lane.title}</span>
+        </div>
+        <div class="lane-count">${state.lanes[lane.id]?.length || 0}</div>
       </div>
     `;
+    
     const body = document.createElement("div");
-    body.className = "laneBody";
+    body.className = "lane-body";
     body.dataset.laneId = lane.id;
 
     body.addEventListener("dragover", (e) => {
@@ -152,7 +321,7 @@ function renderBoard() {
 }
 
 function getDragAfterElement(container, y) {
-  const draggableElements = [...container.querySelectorAll('.unitCard:not(.dragging)')];
+  const draggableElements = [...container.querySelectorAll('.unit-card:not(.dragging)')];
   return draggableElements.reduce((closest, child) => {
     const box = child.getBoundingClientRect();
     const offset = y - box.top - box.height / 2;
@@ -166,34 +335,52 @@ function moveCardToPosition(id, from, to, newIdx) {
   const oldIdx = fromLane.findIndex(c => c.id === id);
   if (oldIdx === -1) return;
   const [card] = fromLane.splice(oldIdx, 1);
-  if (newIdx === -1) toLane.push(card); else toLane.splice(newIdx, 0, card);
-  saveState(); renderBoard(); refreshFinalText(true);
+  if (newIdx === -1) toLane.push(card); 
+  else toLane.splice(newIdx, 0, card);
+  saveState(); 
+  renderBoard(); 
+  refreshFinalText(true);
   playSuccessEffect(to);
 }
 
-/* ---------- 5. التقرير والبطاقات ---------- */
+/* ---------- 4. التقرير والبطاقات ---------- */
 function renderCard(laneId, card) {
   const el = document.createElement("div");
-  el.className = "unitCard";
+  el.className = "unit-card";
   el.draggable = true;
   el.innerHTML = `
-    <div class="unitMain"><input class="unitInput" value="${card.text}"></div>
-    <div class="unitBtns">
-      <button class="iconBtn move-fast">⇄</button>
-      <button class="iconBtn danger">×</button>
+    <input class="unit-input" value="${card.text}">
+    <div class="unit-actions">
+      <button class="icon-btn" data-action="move">⇄</button>
+      <button class="icon-btn" data-action="delete">×</button>
     </div>`;
+  
   el.addEventListener("dragstart", () => {
     dragging = { cardId: card.id, fromLane: laneId };
     el.classList.add("dragging");
     placeholder.style.height = el.offsetHeight + "px";
   });
-  el.addEventListener("dragend", () => { el.classList.remove("dragging"); placeholder.remove(); });
-  el.querySelector(".unitInput").oninput = (e) => { card.text = e.target.value; saveState(); refreshFinalText(); };
-  el.querySelector(".move-fast").onclick = () => openQuickMove(card.id, laneId);
-  el.querySelector(".danger").onclick = () => { 
-    state.lanes[laneId] = state.lanes[laneId].filter(c => c.id !== card.id);
-    saveState(); renderBoard(); refreshFinalText(true);
+  
+  el.addEventListener("dragend", () => { 
+    el.classList.remove("dragging"); 
+    placeholder.remove(); 
+  });
+  
+  el.querySelector(".unit-input").oninput = (e) => { 
+    card.text = e.target.value; 
+    saveState(); 
+    refreshFinalText(); 
   };
+  
+  el.querySelector('[data-action="move"]').onclick = () => openQuickMove(card.id, laneId);
+  el.querySelector('[data-action="delete"]').onclick = () => { 
+    state.lanes[laneId] = state.lanes[laneId].filter(c => c.id !== card.id);
+    saveState(); 
+    renderBoard(); 
+    refreshFinalText(true);
+    toast("تم حذف الوحدة");
+  };
+  
   return el;
 }
 
@@ -220,60 +407,122 @@ function buildReportText() {
     lines.push("");
   });
 
-  lines.push("الملاحظات :", (f.notes || "").trim() || "-", "", `وقت الاستلام : ${(f.recvTime || "").trim()}`, `وقت التسليم : ${(f.handoverTime || "").trim()}`, `تم التسليم إلى : ${(f.handoverTo || "").trim()}`);
+  lines.push(
+    "الملاحظات :", 
+    (f.notes || "").trim() || "-", 
+    "", 
+    `وقت الاستلام : ${(f.recvTime || "").trim()}`, 
+    `وقت التسليم : ${(f.handoverTime || "").trim()}`, 
+    `تم التسليم إلى : ${(f.handoverTo || "").trim()}`
+  );
+  
   return lines.join("\n");
 }
 
-/* ---------- 6. ربط الـ UI والتشغيل ---------- */
+/* ---------- 5. ربط الـ UI والتشغيل ---------- */
 function bindUI() {
   const fields = ["opsName", "opsDeputy", "leaders", "officers", "ncos", "periodOfficer", "notes", "handoverTo"];
-  fields.forEach(f => { if ($("#" + f)) $("#" + f).oninput = (e) => { state.form[f] = e.target.value; saveState(); refreshFinalText(); }; });
+  fields.forEach(f => { 
+    const el = $("#" + f);
+    if (el) el.oninput = (e) => { 
+      state.form[f] = e.target.value; 
+      saveState(); 
+      refreshFinalText(); 
+    }; 
+  });
+  
   $("#btnAddUnit")?.addEventListener("click", addUnit);
-  $("#btnStart")?.addEventListener("click", () => { state.form.recvTime = nowEnglish(); renderAll(); });
-  $("#btnEnd")?.addEventListener("click", () => { state.form.handoverTime = nowEnglish(); renderAll(); });
-  $("#btnCopyReport")?.addEventListener("click", async () => { await navigator.clipboard.writeText($("#finalText").value); toast("تم النسخ!"); });
+  $("#btnStart")?.addEventListener("click", () => { 
+    state.form.recvTime = nowEnglish(); 
+    renderAll(); 
+    toast("تم تسجيل وقت الاستلام");
+  });
+  $("#btnEnd")?.addEventListener("click", () => { 
+    state.form.handoverTime = nowEnglish(); 
+    renderAll(); 
+    toast("تم تسجيل وقت التسليم");
+  });
+  $("#btnCopyReport")?.addEventListener("click", async () => { 
+    const text = $("#finalText").value;
+    await navigator.clipboard.writeText(text); 
+    toast("تم نسخ التقرير!");
+  });
   $("#btnAddExtracted")?.addEventListener("click", () => addExtractedLinesToLane("hotel_top"));
   $("#sheetClose")?.addEventListener("click", () => $("#sheetOverlay").classList.remove("show"));
-  $("#btnReset")?.addEventListener("click", () => { if(confirm("إعادة ضبط؟")){ localStorage.removeItem(STORAGE_KEY); location.reload(); }});
+  $("#btnReset")?.addEventListener("click", () => { 
+    if(confirm("هل أنت متأكد من إعادة الضبط؟ سيتم حذف جميع البيانات.")){ 
+      localStorage.removeItem(STORAGE_KEY); 
+      location.reload(); 
+    }
+  });
 }
 
 function renderAll() {
   const fields = ["opsName", "opsDeputy", "leaders", "officers", "ncos", "periodOfficer", "notes", "handoverTo", "recvTime", "handoverTime"];
-  fields.forEach(f => { if ($("#" + f)) $("#" + f).value = state.form[f] || ""; });
-  renderBoard(); refreshFinalText(true);
+  fields.forEach(f => { 
+    const el = $("#" + f);
+    if (el) el.value = state.form[f] || ""; 
+  });
+  renderBoard(); 
+  refreshFinalText(true);
 }
 
 function openQuickMove(cardId, currentLaneId) {
-  const overlay = $("#sheetOverlay"), grid = $("#sheetGrid");
+  const overlay = $("#sheetOverlay");
+  const grid = $("#sheetGrid");
   grid.innerHTML = "";
+  
   LANES.forEach(lane => {
-    const btn = document.createElement("button"); btn.className = "primary"; btn.textContent = lane.title;
-    btn.onclick = () => { moveCardToPosition(cardId, currentLaneId, lane.id, -1); overlay.classList.remove("show"); };
+    const btn = document.createElement("button"); 
+    btn.className = "btn btn-primary"; 
+    btn.innerHTML = `<span>${lane.title}</span>`;
+    btn.onclick = () => { 
+      moveCardToPosition(cardId, currentLaneId, lane.id, -1); 
+      overlay.classList.remove("show"); 
+    };
     grid.appendChild(btn);
   });
+  
   overlay.classList.add("show");
 }
 
 /* المساعدات */
-function uid() { return (crypto?.randomUUID?.() || ("u_" + Math.random().toString(16).slice(2) + Date.now().toString(16))); }
-function nowEnglish() { return new Date().toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", hour12: true }); }
-function dashList(t) { return (t || "").split("\n").map(s => s.trim()).filter(Boolean).join(" - "); }
-function toast(m) { const t = $("#toast"); if(t){ t.textContent = m; t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 2000); } }
-function playSuccessEffect(laneId) {
-  const el = document.querySelector(`.lane[data-lane-id="${laneId}"]`);
-  if (el) { el.classList.add("lane-active-effect"); setTimeout(() => el.classList.remove("lane-active-effect"), 600); }
-}
-function refreshFinalText(force = false) {
-  const ta = $("#finalText"); if (ta && (force || document.activeElement !== ta)) ta.value = buildReportText();
+function uid() { 
+  return (crypto?.randomUUID?.() || ("u_" + Math.random().toString(16).slice(2) + Date.now().toString(16))); 
 }
 
+function nowEnglish() { 
+  return new Date().toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", hour12: true }); 
+}
+
+function dashList(t) { 
+  return (t || "").split("\n").map(s => s.trim()).filter(Boolean).join(" - "); 
+}
+
+function toast(m) { 
+  const t = $("#toast"); 
+  if(t){ 
+    t.textContent = m; 
+    t.classList.add("show"); 
+    setTimeout(() => t.classList.remove("show"), 2500); 
+  } 
+}
+
+function playSuccessEffect(laneId) {
+  const el = document.querySelector(`.lane[data-lane-id="${laneId}"]`);
+  if (el) { 
+    el.style.boxShadow = "0 0 40px rgba(212, 175, 55, 0.5)";
+    setTimeout(() => el.style.boxShadow = "", 600); 
+  }
+}
+
+function refreshFinalText(force = false) {
+  const ta = $("#finalText"); 
+  if (ta && (force || document.activeElement !== ta)) ta.value = buildReportText();
+}
+
+// تشغيل التطبيق
 document.addEventListener("DOMContentLoaded", () => {
-  injectMilitaryUI();
   bindUI();
   renderAll();
-  const intro = $("#intro");
-  if (intro) {
-    setTimeout(() => { intro.style.opacity = "0"; setTimeout(() => intro.remove(), 800); }, 3000);
-    intro.onclick = () => intro.remove();
-  }
 });
