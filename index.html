@@ -1,470 +1,529 @@
-
-
-army-updates-respect-main.zip
-zip
-
-انا اريد ان تبدل توزيع نقاط كذلك النموذج  تبدل الاسماء القديمة وتضع فقط هذا وعطني الكود كامل 
-
-اعلى الاوتيل نقطة بوليتو نقطة لوس نقطة الكهرب ثغرة قرابسيد
-
-11:14 PM
-سأقوم بفحص الملف المرفوع أولاً لفهم البنية الحالية ثم تعديلها حسب طلبك.
-
-
-Ran 2 commands, viewed 2 files
-الآن فهمت! تريد تغيير النقاط إلى:
-
-اعلى الاوتيل نقطة
-بوليتو نقطة
-لوس نقطة
-الكهرب ثغرة
-قرابسيد
-سأقوم بتعديل الكود الآن:
-
-
-Created a file, read a file
-تم التعديل بنجاح! ✅
-
-التغييرات التي تمت:
-
-تم استبدال النقاط القديمة (9 نقاط) بالنقاط الجديدة (5 نقاط) كالتالي:
-
-اعلى الاوتيل نقطة
-بوليتو نقطة
-لوس نقطة
-الكهرب ثغرة
-قرابسيد
-جميع وظائف النظام تعمل بشكل طبيعي مع النقاط الجديدة فقط، بما في ذلك:
-
-السحب والإفلات بين النقاط
-التوزيع التلقائي
-النقل السريع
-التقرير النهائي
-App
-JS 
-111.jpg
-في مشكلة في انترو اريد تبدل انترو تجعله شي دينماكي ومبهرا جدا وخورافي ومناسب للجيش والعنوان و انترو يصير تحديث مركز العمليات للجيش وبدل شعار في الملف الاصلي الى هذا مرسل اليك
-
-11:24 PM
-سأقوم بإنشاء مقدمة (intro) ديناميكية ومبهرة للجيش مع استخدام الشعار الجديد!
-
-
-فحص ملف HTML لرؤية الـ intro الحالي
-الآن سأقوم بإنشاء intro ديناميكي خرافي! سأنسخ الشعار الجديد أولاً:
-
-
-نسخ الشعار الجديد
-الآن سأقوم بإنشاء ملف HTML محدث مع intro ديناميكي خرافي:
-
-
-Created a file, read a file
-تم إنشاء intro ديناميكي وخرافي بنجاح! 🎖️✨
-
-المميزات الجديدة في الـ Intro:
-🌟 تأثيرات بصرية مبهرة:
-موجات رادار دائرية تتوسع من المركز
-شبكة سداسية عسكرية متحركة في الخلفية
-نجوم متلألئة بتأثير خفقان
-حلقات مدارية دوارة حول الشعار (3 حلقات بسرعات مختلفة)
-ليزر ذهبي متحرك يمسح البطاقة
-زخارف ذهبية في الزوايا الأربع
-⚡ تأثيرات حركية:
-الشعار يطفو بحركة ناعمة مع دوران خفيف
-توهج نابض حول الشعار
-العنوان بتأثير لامع متحرك
-شريط تحميل ديناميكي بتأثير shimmer
-دخول تدريجي لجميع العناصر
-🎯 التفاصيل:
-العنوان: "تحديث مركز العمليات للجيش"
-العنوان الفرعي: "Sandy State Army • Military Unit"
-الشعار الجديد: تم استبداله بالشعار المرسل
-مدة العرض: 4 ثوانٍ (ثم يختفي تلقائياً)
-إمكانية الإغلاق: بالنقر في أي مكان
-📱 متجاوب تماماً:
-يعمل بشكل مثالي على الجوال والكمبيوتر
-تأثيرات محسّنة لجميع الأحجام
-الملفات جاهزة للاستخدام! 🚀
-
-Index
-Code · HTML 
-App
-JS 
-Army logo new
-Image · PNG 
-
-
-
-
-
-Claude is AI and can make mistakes. Please double-check responses.
-Index · HTML
-Copy
-
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>تحديث مركز العمليات للجيش</title>
-  <meta name="description" content="لوحة تحديث مركز العمليات للجيش — نموذج واحد مع توزيع الوحدات بالسحب والإفلات." />
+  <meta name="description" content="نظام تحديث مركز العمليات للجيش - Sandy State Army Military Unit" />
   <style>
-    :root{
-      --bg0:#0b0805;
-      --bg1:#15100a;
-      --sand:#cbb894;
-      --sand2:#bfa77c;
-      --gold:#d8b24a;
-      --gold2:#f1d58a;
-      --ink:#0b0a08;
-      --text:#f7f2e6;
-      --muted:rgba(247,242,230,.75);
-      --card:rgba(13,10,7,.76);
-      --card2:rgba(18,13,9,.86);
-      --stroke:rgba(216,178,74,.28);
-      --stroke2:rgba(241,213,138,.22);
-      --shadow: 0 18px 50px rgba(0,0,0,.55);
-      --r:18px;
-      --r2:14px;
+    /* ============================================ */
+    /* المتغيرات والألوان العسكرية */
+    /* ============================================ */
+    :root {
+      --military-gold: #d4af37;
+      --gold-light: #f4e4a6;
+      --gold-dark: #b8941f;
+      --military-green: #3d5a3c;
+      --dark-green: #1a2f1a;
+      --bg-dark: #0a0e0a;
+      --bg-darker: #050705;
+      --text-light: #f5f5dc;
+      --text-gold: #e8d7a0;
+      --card-bg: rgba(20, 30, 20, 0.85);
+      --card-border: rgba(212, 175, 55, 0.3);
+      --shadow-gold: 0 0 40px rgba(212, 175, 55, 0.3);
     }
 
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      color:var(--text);
-      font-family: system-ui, -apple-system, Segoe UI, Tahoma, Arial, sans-serif;
-      background:
-        radial-gradient(1200px 800px at 20% 10%, rgba(216,178,74,.14), transparent 60%),
-        radial-gradient(900px 600px at 85% 30%, rgba(241,213,138,.10), transparent 55%),
-        radial-gradient(1100px 900px at 50% 100%, rgba(203,184,148,.14), transparent 60%),
-        linear-gradient(180deg, var(--bg0), var(--bg1));
-      overflow-x:hidden;
-    }
-    /* Camouflage film layer */
-    body::before{
-      content:"";
-      position:fixed; inset:0;
-      pointer-events:none;
-      background:
-        radial-gradient(18px 14px at 12% 18%, rgba(203,184,148,.12), transparent 60%),
-        radial-gradient(22px 16px at 22% 72%, rgba(216,178,74,.10), transparent 60%),
-        radial-gradient(26px 18px at 78% 28%, rgba(191,167,124,.10), transparent 60%),
-        radial-gradient(20px 16px at 88% 74%, rgba(241,213,138,.08), transparent 60%),
-        radial-gradient(28px 20px at 48% 56%, rgba(203,184,148,.09), transparent 60%),
-        radial-gradient(22px 18px at 56% 18%, rgba(191,167,124,.09), transparent 60%);
-      mix-blend-mode:screen;
-      opacity:.55;
-      filter: blur(.2px);
-    }
-    body::after{
-      content:"";
-      position:fixed; inset:0;
-      pointer-events:none;
-      background:
-        repeating-linear-gradient(0deg, rgba(255,255,255,.05) 0, rgba(255,255,255,.05) 1px, transparent 2px, transparent 6px);
-      opacity:.07;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    a{color:inherit}
-    .wrap{max-width:1200px; margin:0 auto; padding:22px 16px 40px}
+    html, body {
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-darker);
+      color: var(--text-light);
+      position: relative;
+    }
+
+    /* ============================================ */
+    /* خلفية متحركة عسكرية ديناميكية */
+    /* ============================================ */
+    .animated-background {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      background: 
+        radial-gradient(ellipse at 20% 30%, rgba(61, 90, 60, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 70%, rgba(26, 47, 26, 0.2) 0%, transparent 50%),
+        linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
+    }
+
+    /* خطوط الشبكة العسكرية المتحركة */
+    .grid-lines {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(212, 175, 55, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212, 175, 55, 0.03) 1px, transparent 1px);
+      background-size: 50px 50px;
+      animation: gridMove 20s linear infinite;
+      opacity: 0.4;
+    }
+
+    @keyframes gridMove {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(50px, 50px); }
+    }
+
+    /* نقاط متحركة عسكرية */
+    .military-particles {
+      position: absolute;
+      inset: 0;
+    }
+
+    .particle {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: var(--military-gold);
+      border-radius: 50%;
+      opacity: 0;
+      animation: particleFloat 15s infinite ease-in-out;
+      box-shadow: 0 0 4px var(--military-gold);
+    }
+
+    @keyframes particleFloat {
+      0%, 100% {
+        opacity: 0;
+        transform: translateY(0) translateX(0) scale(1);
+      }
+      10% {
+        opacity: 0.6;
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(-100vh) translateX(30px) scale(1.5);
+      }
+      90% {
+        opacity: 0.3;
+      }
+    }
+
+    /* موجات رادار كبيرة */
+    .radar-waves {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1000px;
+      height: 1000px;
+      margin: -500px 0 0 -500px;
+      pointer-events: none;
+    }
+
+    .radar-wave {
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(212, 175, 55, 0.1);
+      border-radius: 50%;
+      animation: radarExpand 8s infinite ease-out;
+    }
+
+    .radar-wave:nth-child(2) { animation-delay: 2s; }
+    .radar-wave:nth-child(3) { animation-delay: 4s; }
+    .radar-wave:nth-child(4) { animation-delay: 6s; }
+
+    @keyframes radarExpand {
+      0% {
+        transform: scale(0);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
 
     /* ============================================ */
     /* INTRO الديناميكي الخرافي */
     /* ============================================ */
-    .introOverlay {
+    .intro-overlay {
       position: fixed;
       inset: 0;
+      z-index: 10000;
+      background: 
+        radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.15) 0%, transparent 70%),
+        linear-gradient(135deg, rgba(10, 14, 10, 0.98) 0%, rgba(5, 7, 5, 0.98) 100%);
       display: flex;
       align-items: center;
       justify-content: center;
-      background: 
-        radial-gradient(900px 700px at 50% 40%, rgba(216,178,74,.25), transparent 70%),
-        radial-gradient(1200px 900px at 50% 90%, rgba(203,184,148,.20), transparent 75%),
-        linear-gradient(180deg, rgba(8,6,4,.96), rgba(12,9,6,.98));
-      backdrop-filter: blur(12px);
-      z-index: 9999;
-      transition: opacity 0.8s ease-out;
+      backdrop-filter: blur(10px);
+      transition: opacity 1s ease-out, visibility 1s;
     }
 
-    /* خلفية متحركة بالنجوم العسكرية */
-    .introStars {
+    .intro-overlay.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    /* تأثيرات الخلفية في الـ Intro */
+    .intro-bg-effects {
       position: absolute;
       inset: 0;
       overflow: hidden;
-      opacity: 0.3;
     }
 
-    .introStar {
-      position: absolute;
-      width: 3px;
-      height: 3px;
-      background: var(--gold);
-      border-radius: 50%;
-      box-shadow: 0 0 6px var(--gold2);
-      animation: starTwinkle 3s infinite ease-in-out;
-    }
-
-    @keyframes starTwinkle {
-      0%, 100% { opacity: 0.3; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.5); }
-    }
-
-    /* الشبكة السداسية المتحركة */
-    .hexGrid {
+    /* خطوط متقاطعة متحركة */
+    .crosshair-lines {
       position: absolute;
       inset: 0;
-      background-image: 
-        linear-gradient(30deg, rgba(216,178,74,.08) 12%, transparent 12.5%, transparent 87%, rgba(216,178,74,.08) 87.5%, rgba(216,178,74,.08)),
-        linear-gradient(150deg, rgba(216,178,74,.08) 12%, transparent 12.5%, transparent 87%, rgba(216,178,74,.08) 87.5%, rgba(216,178,74,.08)),
-        linear-gradient(30deg, rgba(216,178,74,.08) 12%, transparent 12.5%, transparent 87%, rgba(216,178,74,.08) 87.5%, rgba(216,178,74,.08)),
-        linear-gradient(150deg, rgba(216,178,74,.08) 12%, transparent 12.5%, transparent 87%, rgba(216,178,74,.08) 87.5%, rgba(216,178,74,.08));
-      background-size: 80px 140px;
-      background-position: 0 0, 0 0, 40px 70px, 40px 70px;
-      animation: hexMove 20s linear infinite;
-      opacity: 0.4;
     }
 
-    @keyframes hexMove {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(140px); }
+    .crosshair-h, .crosshair-v {
+      position: absolute;
+      background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.4), transparent);
+      animation: crosshairScan 4s infinite ease-in-out;
     }
 
-    /* موجات الرادار الدائرية */
-    .radarWaves {
+    .crosshair-h {
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: 50%;
+    }
+
+    .crosshair-v {
+      width: 2px;
+      height: 100%;
+      left: 50%;
+      top: 0;
+      background: linear-gradient(180deg, transparent, rgba(212, 175, 55, 0.4), transparent);
+      animation-delay: 2s;
+    }
+
+    @keyframes crosshairScan {
+      0%, 100% { opacity: 0.3; transform: translate(0, 0); }
+      50% { opacity: 1; }
+    }
+
+    /* دوائر متموجة */
+    .intro-ripples {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      width: 800px;
-      height: 800px;
-      pointer-events: none;
+      width: 600px;
+      height: 600px;
+      margin: -300px 0 0 -300px;
     }
 
-    .radarWave {
+    .ripple {
       position: absolute;
       inset: 0;
-      border: 2px solid rgba(216,178,74,.3);
+      border: 2px solid rgba(212, 175, 55, 0.3);
       border-radius: 50%;
-      animation: radarPulse 4s infinite ease-out;
+      animation: rippleExpand 5s infinite ease-out;
     }
 
-    .radarWave:nth-child(2) { animation-delay: 1s; }
-    .radarWave:nth-child(3) { animation-delay: 2s; }
-    .radarWave:nth-child(4) { animation-delay: 3s; }
+    .ripple:nth-child(2) { animation-delay: 1.25s; }
+    .ripple:nth-child(3) { animation-delay: 2.5s; }
+    .ripple:nth-child(4) { animation-delay: 3.75s; }
 
-    @keyframes radarPulse {
+    @keyframes rippleExpand {
       0% {
-        transform: scale(0.1);
+        transform: scale(0.5);
         opacity: 1;
       }
       100% {
-        transform: scale(1.5);
+        transform: scale(2);
         opacity: 0;
       }
     }
 
-    /* البطاقة المركزية */
-    .introCard {
+    /* البطاقة الرئيسية للـ Intro */
+    .intro-card {
       position: relative;
-      width: min(960px, 92vw);
+      width: 90%;
+      max-width: 1000px;
       background: 
-        linear-gradient(135deg, rgba(18,13,9,.95) 0%, rgba(10,8,6,.92) 100%);
-      border: 2px solid rgba(216,178,74,.4);
-      border-radius: 28px;
+        linear-gradient(135deg, 
+          rgba(30, 45, 30, 0.95) 0%, 
+          rgba(15, 25, 15, 0.95) 100%);
+      border: 3px solid var(--military-gold);
+      border-radius: 20px;
+      padding: 60px 40px;
       box-shadow: 
-        0 0 80px rgba(216,178,74,.25),
-        0 40px 120px rgba(0,0,0,.8),
-        inset 0 1px 0 rgba(241,213,138,.15);
+        0 0 100px rgba(212, 175, 55, 0.4),
+        0 30px 90px rgba(0, 0, 0, 0.8),
+        inset 0 1px 0 rgba(212, 175, 55, 0.2);
+      animation: introCardEnter 1.5s ease-out;
       overflow: hidden;
-      animation: cardEntrance 1.2s ease-out both;
-      z-index: 2;
     }
 
-    @keyframes cardEntrance {
+    @keyframes introCardEnter {
       0% {
         opacity: 0;
-        transform: scale(0.8) translateY(40px);
+        transform: scale(0.7) rotateX(20deg);
       }
       100% {
         opacity: 1;
-        transform: scale(1) translateY(0);
+        transform: scale(1) rotateX(0deg);
       }
     }
 
-    /* تأثير الليزر الذهبي المتحرك */
-    .laserSweep {
+    /* تأثير الليزر المتحرك */
+    .intro-laser {
       position: absolute;
       top: 0;
       left: -100%;
-      width: 200%;
+      width: 150%;
       height: 100%;
       background: linear-gradient(
         90deg,
         transparent 0%,
-        rgba(216,178,74,.05) 45%,
-        rgba(241,213,138,.25) 50%,
-        rgba(216,178,74,.05) 55%,
+        rgba(212, 175, 55, 0.1) 48%,
+        rgba(244, 228, 166, 0.3) 50%,
+        rgba(212, 175, 55, 0.1) 52%,
         transparent 100%
       );
-      animation: laserMove 3s infinite ease-in-out;
+      animation: laserSweep 4s infinite ease-in-out;
       pointer-events: none;
     }
 
-    @keyframes laserMove {
-      0% { transform: translateX(-50%); }
-      50% { transform: translateX(25%); }
-      100% { transform: translateX(-50%); }
+    @keyframes laserSweep {
+      0%, 100% { transform: translateX(-20%); }
+      50% { transform: translateX(90%); }
     }
 
     /* محتوى الـ Intro */
-    .introContent {
+    .intro-content {
       position: relative;
       z-index: 2;
-      padding: 50px 30px;
       text-align: center;
     }
 
-    /* شعار الجيش بتأثيرات ديناميكية */
-    .logoContainer {
+    /* شعار الجيش في الـ Intro */
+    .intro-logo-wrapper {
       position: relative;
-      width: 220px;
-      height: 220px;
-      margin: 0 auto 30px;
-      animation: logoFloat 3.5s ease-in-out infinite;
+      width: 280px;
+      height: 280px;
+      margin: 0 auto 40px;
+      animation: logoFloatIntro 4s ease-in-out infinite;
     }
 
-    @keyframes logoFloat {
+    @keyframes logoFloatIntro {
       0%, 100% { 
-        transform: translateY(0) rotate(0deg); 
+        transform: translateY(0) rotate(0deg) scale(1); 
       }
       25% { 
-        transform: translateY(-12px) rotate(2deg); 
+        transform: translateY(-15px) rotate(3deg) scale(1.05); 
       }
       75% { 
-        transform: translateY(-8px) rotate(-2deg); 
+        transform: translateY(-10px) rotate(-3deg) scale(1.03); 
       }
     }
 
-    /* الحلقات الدوارة حول الشعار */
-    .orbitRing {
+    /* حلقات مدارية متعددة */
+    .orbit-ring {
       position: absolute;
+      border: 2px solid rgba(212, 175, 55, 0.4);
       border-radius: 50%;
-      border: 2px solid rgba(216,178,74,.35);
-      box-shadow: 
-        0 0 20px rgba(216,178,74,.2),
-        inset 0 0 20px rgba(216,178,74,.1);
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
     }
 
-    .orbitRing:nth-child(1) {
-      inset: -15px;
-      animation: orbitSpin1 8s linear infinite;
+    .orbit-ring:nth-child(1) {
+      inset: -20px;
+      animation: orbitRotate1 10s linear infinite;
       border-style: dashed;
     }
 
-    .orbitRing:nth-child(2) {
-      inset: -35px;
-      animation: orbitSpin2 12s linear infinite reverse;
+    .orbit-ring:nth-child(2) {
+      inset: -45px;
+      animation: orbitRotate2 15s linear infinite reverse;
       opacity: 0.7;
     }
 
-    .orbitRing:nth-child(3) {
-      inset: -55px;
-      animation: orbitSpin1 16s linear infinite;
-      border-color: rgba(241,213,138,.25);
+    .orbit-ring:nth-child(3) {
+      inset: -70px;
+      animation: orbitRotate1 20s linear infinite;
+      border-color: rgba(244, 228, 166, 0.3);
       opacity: 0.5;
     }
 
-    @keyframes orbitSpin1 {
+    .orbit-ring:nth-child(4) {
+      inset: -95px;
+      animation: orbitRotate2 25s linear infinite reverse;
+      border-color: rgba(212, 175, 55, 0.2);
+      opacity: 0.4;
+      border-style: dotted;
+    }
+
+    @keyframes orbitRotate1 {
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
     }
 
-    @keyframes orbitSpin2 {
+    @keyframes orbitRotate2 {
       from { transform: rotate(0deg) scale(1); }
-      to { transform: rotate(360deg) scale(1.05); }
+      to { transform: rotate(360deg) scale(1.08); }
     }
 
     /* الشعار نفسه */
-    .armyLogo {
+    .intro-logo {
       position: relative;
-      z-index: 3;
+      z-index: 5;
       width: 100%;
       height: 100%;
       object-fit: contain;
       filter: 
-        drop-shadow(0 0 40px rgba(216,178,74,.6))
-        drop-shadow(0 20px 60px rgba(0,0,0,.8));
-      animation: logoGlow 2s ease-in-out infinite;
+        drop-shadow(0 0 60px rgba(212, 175, 55, 0.7))
+        drop-shadow(0 30px 80px rgba(0, 0, 0, 0.9));
+      animation: logoGlowPulse 3s ease-in-out infinite;
     }
 
-    @keyframes logoGlow {
+    @keyframes logoGlowPulse {
       0%, 100% { 
         filter: 
-          drop-shadow(0 0 40px rgba(216,178,74,.6))
-          drop-shadow(0 20px 60px rgba(0,0,0,.8));
+          drop-shadow(0 0 60px rgba(212, 175, 55, 0.7))
+          drop-shadow(0 30px 80px rgba(0, 0, 0, 0.9));
       }
       50% { 
         filter: 
-          drop-shadow(0 0 60px rgba(241,213,138,.8))
-          drop-shadow(0 20px 60px rgba(0,0,0,.8));
+          drop-shadow(0 0 90px rgba(244, 228, 166, 0.9))
+          drop-shadow(0 30px 80px rgba(0, 0, 0, 0.9));
       }
     }
 
-    /* العنوان الرئيسي */
-    .introTitle {
-      margin: 0 0 20px;
-      font-size: 48px;
-      font-weight: 700;
+    /* عنوان الـ Intro */
+    .intro-title {
+      margin: 0 0 25px;
+      font-size: 56px;
+      font-weight: 900;
       line-height: 1.2;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
       background: linear-gradient(
         135deg,
-        #f1d58a 0%,
-        #d8b24a 25%,
-        #f1d58a 50%,
-        #d8b24a 75%,
-        #f1d58a 100%
+        #f4e4a6 0%,
+        #d4af37 25%,
+        #f4e4a6 50%,
+        #d4af37 75%,
+        #f4e4a6 100%
       );
-      background-size: 200% auto;
+      background-size: 300% auto;
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
       text-shadow: 
-        0 0 80px rgba(216,178,74,.4),
-        0 20px 60px rgba(0,0,0,.7);
-      animation: titleShine 3s linear infinite, titleEntrance 1s ease-out both 0.3s;
+        0 0 80px rgba(212, 175, 55, 0.5),
+        0 25px 70px rgba(0, 0, 0, 0.8);
+      animation: titleShimmer 4s linear infinite, titleEntrance 1.2s ease-out;
     }
 
-    @keyframes titleShine {
-      to { background-position: 200% center; }
+    @keyframes titleShimmer {
+      to { background-position: 300% center; }
     }
 
     @keyframes titleEntrance {
       from {
         opacity: 0;
-        transform: translateY(20px);
-        letter-spacing: 8px;
+        transform: translateY(30px) scale(0.9);
+        letter-spacing: 12px;
       }
       to {
         opacity: 1;
-        transform: translateY(0);
-        letter-spacing: 1px;
+        transform: translateY(0) scale(1);
+        letter-spacing: 2px;
       }
     }
 
     /* العنوان الفرعي */
-    .introSubtitle {
-      margin: 0 0 35px;
-      font-size: 16px;
-      font-weight: 500;
-      letter-spacing: 3px;
+    .intro-subtitle {
+      margin: 0 0 45px;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 4px;
       text-transform: uppercase;
-      color: rgba(241,213,138,.85);
-      text-shadow: 0 10px 30px rgba(0,0,0,.6);
-      animation: subtitleEntrance 1s ease-out both 0.5s;
+      color: var(--text-gold);
+      text-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+      animation: subtitleEntrance 1.2s ease-out 0.3s both;
     }
 
     @keyframes subtitleEntrance {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* شريط التحميل */
+    .loading-bar {
+      width: 500px;
+      max-width: 90%;
+      height: 6px;
+      margin: 0 auto 35px;
+      background: rgba(212, 175, 55, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 
+        0 0 30px rgba(212, 175, 55, 0.3),
+        inset 0 0 15px rgba(0, 0, 0, 0.6);
+      animation: barEntrance 1.2s ease-out 0.6s both;
+    }
+
+    @keyframes barEntrance {
+      from {
+        opacity: 0;
+        transform: scaleX(0.5);
+      }
+      to {
+        opacity: 1;
+        transform: scaleX(1);
+      }
+    }
+
+    .loading-fill {
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        rgba(212, 175, 55, 0.8) 0%,
+        rgba(244, 228, 166, 1) 50%,
+        rgba(212, 175, 55, 0.8) 100%
+      );
+      background-size: 300% 100%;
+      border-radius: 10px;
+      box-shadow: 
+        0 0 30px rgba(244, 228, 166, 0.8),
+        0 0 50px rgba(212, 175, 55, 0.5);
+      animation: loadingProgress 4s ease-in-out, loadingShine 2s linear infinite;
+    }
+
+    @keyframes loadingProgress {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
+
+    @keyframes loadingShine {
+      0% { background-position: -300% 0; }
+      100% { background-position: 300% 0; }
+    }
+
+    /* رسالة التحميل */
+    .intro-message {
+      margin: 0;
+      padding: 18px 30px;
+      font-size: 15px;
+      color: var(--text-light);
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 
+        0 15px 50px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(212, 175, 55, 0.2);
+      animation: messageEntrance 1.2s ease-out 0.9s both;
+    }
+
+    @keyframes messageEntrance {
       from {
         opacity: 0;
         transform: translateY(15px);
@@ -475,746 +534,1173 @@ Copy
       }
     }
 
-    /* شريط التحميل */
-    .loadingBar {
-      width: 400px;
-      max-width: 90%;
-      height: 4px;
-      margin: 0 auto 25px;
-      background: rgba(216,178,74,.15);
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 
-        0 0 20px rgba(216,178,74,.2),
-        inset 0 0 10px rgba(0,0,0,.5);
-      animation: barEntrance 1s ease-out both 0.7s;
-    }
-
-    @keyframes barEntrance {
-      from {
-        opacity: 0;
-        transform: scaleX(0);
-      }
-      to {
-        opacity: 1;
-        transform: scaleX(1);
-      }
-    }
-
-    .loadingBarFill {
-      height: 100%;
-      background: linear-gradient(
-        90deg,
-        rgba(216,178,74,.8) 0%,
-        rgba(241,213,138,1) 50%,
-        rgba(216,178,74,.8) 100%
-      );
-      background-size: 200% 100%;
-      border-radius: 10px;
-      box-shadow: 
-        0 0 20px rgba(241,213,138,.6),
-        0 0 40px rgba(216,178,74,.4);
-      animation: loadingProgress 3s ease-in-out, loadingShimmer 1.5s linear infinite;
-    }
-
-    @keyframes loadingProgress {
-      0% { width: 0%; }
-      100% { width: 100%; }
-    }
-
-    @keyframes loadingShimmer {
-      0% { background-position: -200% 0; }
-      100% { background-position: 200% 0; }
-    }
-
-    /* رسالة الانتظار */
-    .introHint {
-      margin: 0;
-      padding: 15px 25px;
-      font-size: 14px;
-      color: rgba(247,242,230,.75);
-      background: rgba(0,0,0,.3);
-      border: 1px solid rgba(216,178,74,.2);
-      border-radius: 16px;
-      display: inline-block;
-      box-shadow: 
-        0 10px 40px rgba(0,0,0,.4),
-        inset 0 1px 0 rgba(241,213,138,.1);
-      animation: hintEntrance 1s ease-out both 0.9s;
-    }
-
-    @keyframes hintEntrance {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .introHint b {
-      color: var(--gold2);
+    .intro-message b {
+      color: var(--military-gold);
       font-weight: 700;
     }
 
-    /* زخارف الزوايا */
-    .cornerDecor {
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      opacity: 0.15;
+    /* ============================================ */
+    /* PATCH NOTES النوتة التحديثية */
+    /* ============================================ */
+    .patch-notes-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 9500;
+      background: rgba(0, 0, 0, 0.92);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s, visibility 0.5s;
     }
 
-    .cornerDecor::before,
-    .cornerDecor::after {
+    .patch-notes-overlay.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .patch-notes {
+      position: relative;
+      width: 100%;
+      max-width: 700px;
+      background: 
+        linear-gradient(135deg, 
+          rgba(30, 45, 30, 0.98) 0%, 
+          rgba(15, 25, 15, 0.98) 100%);
+      border: 2px solid var(--military-gold);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 
+        0 0 80px rgba(212, 175, 55, 0.4),
+        0 25px 80px rgba(0, 0, 0, 0.9);
+      animation: patchNotesEnter 0.8s ease-out;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    @keyframes patchNotesEnter {
+      from {
+        opacity: 0;
+        transform: scale(0.85) translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    .patch-header {
+      text-align: center;
+      margin-bottom: 35px;
+      padding-bottom: 25px;
+      border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+    }
+
+    .patch-badge {
+      display: inline-block;
+      padding: 8px 20px;
+      background: linear-gradient(135deg, var(--military-gold), var(--gold-dark));
+      color: var(--bg-darker);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-radius: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+    }
+
+    .patch-title {
+      margin: 0 0 10px;
+      font-size: 36px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #f4e4a6, #d4af37);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .patch-version {
+      margin: 0;
+      font-size: 14px;
+      color: rgba(212, 175, 55, 0.7);
+      letter-spacing: 1px;
+    }
+
+    .patch-content {
+      margin-bottom: 30px;
+    }
+
+    .patch-section {
+      margin-bottom: 25px;
+    }
+
+    .patch-section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 15px;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--military-gold);
+    }
+
+    .patch-icon {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(212, 175, 55, 0.2);
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .patch-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .patch-item {
+      position: relative;
+      padding: 12px 12px 12px 35px;
+      margin-bottom: 10px;
+      background: rgba(0, 0, 0, 0.3);
+      border-left: 3px solid var(--military-gold);
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-light);
+      transition: all 0.3s;
+    }
+
+    .patch-item:hover {
+      background: rgba(212, 175, 55, 0.1);
+      transform: translateX(-5px);
+    }
+
+    .patch-item::before {
+      content: '▸';
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      color: var(--military-gold);
+      font-weight: 700;
+    }
+
+    .patch-footer {
+      text-align: center;
+      padding-top: 25px;
+      border-top: 2px solid rgba(212, 175, 55, 0.3);
+    }
+
+    .patch-close {
+      padding: 12px 40px;
+      background: linear-gradient(135deg, var(--military-gold), var(--gold-dark));
+      color: var(--bg-darker);
+      border: none;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+      transition: all 0.3s;
+    }
+
+    .patch-close:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 40px rgba(212, 175, 55, 0.6);
+    }
+
+    /* ============================================ */
+    /* المحتوى الرئيسي */
+    /* ============================================ */
+    .main-container {
+      position: relative;
+      z-index: 1;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+    }
+
+    /* الهيدر الفخم */
+    .header {
+      position: sticky;
+      top: 20px;
+      z-index: 100;
+      background: 
+        linear-gradient(135deg, 
+          rgba(30, 45, 30, 0.92) 0%, 
+          rgba(15, 25, 15, 0.88) 100%);
+      border: 2px solid var(--military-gold);
+      border-radius: 20px;
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      box-shadow: 
+        0 0 60px rgba(212, 175, 55, 0.3),
+        0 20px 60px rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(15px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .header::before {
       content: '';
       position: absolute;
-      background: var(--gold);
-      box-shadow: 0 0 20px var(--gold);
+      inset: 0;
+      border-radius: 18px;
+      padding: 2px;
+      background: linear-gradient(135deg, var(--military-gold), transparent, var(--military-gold));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity: 0.3;
+      animation: borderShine 3s linear infinite;
     }
 
-    .cornerDecor::before {
+    @keyframes borderShine {
+      to { background-position: 200% center; }
+    }
+
+    .header-left, .header-right {
+      flex-shrink: 0;
+    }
+
+    .header-logo {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.5));
+      animation: logoFloat 3s ease-in-out infinite;
+    }
+
+    @keyframes logoFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .header-center {
+      flex: 1;
+      text-align: center;
+    }
+
+    .header-title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #f4e4a6, #d4af37, #f4e4a6);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: titleGlow 3s linear infinite;
+      text-shadow: 0 0 40px rgba(212, 175, 55, 0.3);
+    }
+
+    @keyframes titleGlow {
+      to { background-position: 200% center; }
+    }
+
+    .header-subtitle {
+      margin: 5px 0 0;
+      font-size: 13px;
+      color: rgba(212, 175, 55, 0.8);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* الشبكة الرئيسية */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 25px;
+    }
+
+    /* البطاقات الفخمة */
+    .card {
+      background: 
+        linear-gradient(135deg, 
+          rgba(30, 45, 30, 0.85) 0%, 
+          rgba(15, 25, 15, 0.85) 100%);
+      border: 2px solid rgba(212, 175, 55, 0.3);
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 
+        0 0 40px rgba(212, 175, 55, 0.2),
+        0 15px 50px rgba(0, 0, 0, 0.6);
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
       width: 100%;
-      height: 2px;
-    }
-
-    .cornerDecor::after {
-      width: 2px;
       height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(212, 175, 55, 0.1),
+        transparent
+      );
+      animation: cardShine 4s infinite;
     }
 
-    .cornerDecor.topLeft {
-      top: 0;
-      left: 0;
+    @keyframes cardShine {
+      0%, 100% { left: -100%; }
+      50% { left: 100%; }
     }
 
-    .cornerDecor.topLeft::before {
-      top: 0;
-      left: 0;
+    .card > * {
+      position: relative;
+      z-index: 2;
     }
 
-    .cornerDecor.topLeft::after {
-      top: 0;
-      left: 0;
+    .card-title {
+      margin: 0 0 20px;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--military-gold);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(212, 175, 55, 0.2);
     }
 
-    .cornerDecor.topRight {
-      top: 0;
-      right: 0;
+    .card-icon {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(212, 175, 55, 0.2);
+      border-radius: 8px;
+      font-size: 18px;
     }
 
-    .cornerDecor.topRight::before {
-      top: 0;
-      right: 0;
+    /* الحقول */
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-bottom: 15px;
     }
 
-    .cornerDecor.topRight::after {
-      top: 0;
-      right: 0;
+    .form-field {
+      margin-bottom: 15px;
     }
 
-    .cornerDecor.bottomLeft {
-      bottom: 0;
-      left: 0;
+    .form-label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-gold);
+      letter-spacing: 0.5px;
     }
 
-    .cornerDecor.bottomLeft::before {
-      bottom: 0;
-      left: 0;
+    .form-input, .form-textarea {
+      width: 100%;
+      padding: 12px 15px;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 10px;
+      color: var(--text-light);
+      font-size: 14px;
+      font-family: inherit;
+      transition: all 0.3s;
     }
 
-    .cornerDecor.bottomLeft::after {
-      bottom: 0;
-      left: 0;
+    .form-input:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--military-gold);
+      background: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
     }
 
-    .cornerDecor.bottomRight {
-      bottom: 0;
-      right: 0;
+    .form-input::placeholder, .form-textarea::placeholder {
+      color: rgba(245, 245, 220, 0.4);
     }
 
-    .cornerDecor.bottomRight::before {
-      bottom: 0;
-      right: 0;
+    .form-textarea {
+      min-height: 90px;
+      resize: vertical;
     }
 
-    .cornerDecor.bottomRight::after {
-      bottom: 0;
-      right: 0;
+    .form-textarea.large {
+      min-height: 220px;
     }
 
-    /* تأثير الاختفاء */
-    .introOverlay.fadeOut {
-      opacity: 0;
-      pointer-events: none;
+    /* الأزرار الفخمة */
+    .button-group {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
     }
 
-    /* ============================================ */
-    /* باقي التنسيقات */
-    /* ============================================ */
-
-    /* Header */
-    .topbar{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:14px;
-      padding:14px 14px 18px;
-      border:1px solid rgba(216,178,74,.22);
-      border-radius:22px;
-      background: linear-gradient(180deg, rgba(18,13,9,.74), rgba(10,8,6,.62));
-      box-shadow: var(--shadow);
-      position:sticky;
-      top:12px;
-      z-index:50;
-      backdrop-filter: blur(8px);
-    }
-    .topbar::after{
-      content:"";
-      position:absolute; inset:0;
-      border-radius:22px;
-      pointer-events:none;
-      background: radial-gradient(500px 140px at 50% 0%, rgba(241,213,138,.14), transparent 70%);
-      opacity:.9;
-    }
-    .topLogo{
-      width:56px; height:56px;
-      object-fit:contain;
-      filter: drop-shadow(0 10px 24px rgba(0,0,0,.65)) drop-shadow(0 0 12px rgba(216,178,74,.22));
-      position:relative;
-      z-index:2;
-    }
-    .topTitles{
-      position:relative;
-      z-index:2;
-      text-align:center;
-      line-height:1.15;
-    }
-    .topTitle{
-      margin:0;
-      font-size:22px;
-      background: linear-gradient(180deg, var(--gold2), var(--gold));
-      -webkit-background-clip:text;
-      background-clip:text;
-      color:transparent;
-      text-shadow: 0 12px 32px rgba(0,0,0,.6);
-    }
-    .topSub{
-      margin:6px 0 0;
-      font-size:12px;
-      color:rgba(247,242,230,.72);
-      letter-spacing:1.4px;
-      text-transform:uppercase;
+    .btn {
+      padding: 12px 24px;
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(212, 175, 55, 0.1));
+      color: var(--military-gold);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.3s;
+      letter-spacing: 0.5px;
+      position: relative;
+      overflow: hidden;
     }
 
-    /* Cards + layout */
-    .grid{
-      display:grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap:16px;
-      margin-top:16px;
-      align-items:start;
-    }
-    @media (max-width: 980px){
-      .grid{grid-template-columns:1fr}
-      .topbar{top:8px}
-    }
-
-    .card{
-      border-radius: var(--r);
-      background: linear-gradient(180deg, var(--card2), var(--card));
-      border:1px solid rgba(216,178,74,.22);
-      box-shadow: var(--shadow);
-      padding:16px;
-      position:relative;
-      overflow:hidden;
-    }
-    .card::before{
-      content:"";
-      position:absolute; inset:0;
-      pointer-events:none;
-      background:
-        radial-gradient(600px 240px at 50% 0%, rgba(241,213,138,.10), transparent 65%),
-        radial-gradient(440px 200px at 10% 40%, rgba(216,178,74,.06), transparent 60%);
-      opacity:1;
-    }
-    .card > *{position:relative; z-index:2}
-
-    .card h2{
-      margin:0 0 12px;
-      font-size:16px;
-      letter-spacing:.4px;
-      color:rgba(241,213,138,.92);
-    }
-    .hint{
-      margin-top:8px;
-      font-size:12px;
-      color:rgba(247,242,230,.65);
-      line-height:1.5;
-    }
-    .hint b{color:rgba(241,213,138,.88)}
-
-    /* Form */
-    label{
-      display:block;
-      margin-bottom:5px;
-      font-size:13px;
-      color:rgba(247,242,230,.85);
-      letter-spacing:.2px;
-    }
-    input,textarea{
-      width:100%;
-      padding:9px 11px;
-      background:rgba(0,0,0,.28);
-      border:1px solid rgba(216,178,74,.18);
-      border-radius:10px;
-      color:var(--text);
-      font-size:14px;
-      font-family:inherit;
-      transition:.2s;
-      resize:vertical;
-    }
-    input::placeholder,textarea::placeholder{
-      color:rgba(247,242,230,.4);
-    }
-    input:focus,textarea:focus{
-      outline:0;
-      border-color:rgba(216,178,74,.4);
-      box-shadow: 0 0 0 3px rgba(216,178,74,.08);
-    }
-    textarea{min-height:80px}
-    textarea.big{min-height:200px}
-
-    .row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
-    .field{}
-    @media (max-width:680px){
-      .row{grid-template-columns:1fr}
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(212, 175, 55, 0.3);
+      transform: translate(-50%, -50%);
+      transition: width 0.5s, height 0.5s;
     }
 
-    /* Buttons */
-    .btns{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
-    button{
-      padding:9px 16px;
-      background: linear-gradient(180deg, rgba(241,213,138,.18), rgba(216,178,74,.12));
-      color:var(--gold2);
-      border:1px solid rgba(216,178,74,.28);
-      border-radius:12px;
-      font-size:13px;
-      font-weight:600;
-      font-family:inherit;
-      cursor:pointer;
-      transition:.2s;
-      letter-spacing:.2px;
-    }
-    button:hover{
-      background: linear-gradient(180deg, rgba(241,213,138,.28), rgba(216,178,74,.20));
-      border-color:rgba(216,178,74,.4);
-      box-shadow: 0 6px 20px rgba(0,0,0,.35);
-    }
-    button.primary{
-      background: linear-gradient(180deg, var(--gold2), var(--gold));
-      color:var(--ink);
-      border-color:var(--gold);
-      box-shadow: 0 10px 28px rgba(0,0,0,.4);
-    }
-    button.primary:hover{
-      background: linear-gradient(180deg, var(--gold), var(--sand2));
-      box-shadow: 0 14px 36px rgba(0,0,0,.5);
-    }
-    button.danger{
-      background: linear-gradient(180deg, rgba(220,60,60,.18), rgba(180,40,40,.12));
-      color:rgba(255,120,120,.9);
-      border-color:rgba(220,60,60,.28);
-    }
-    button.danger:hover{
-      background: linear-gradient(180deg, rgba(220,60,60,.28), rgba(180,40,40,.20));
-      border-color:rgba(220,60,60,.4);
+    .btn:hover::before {
+      width: 300px;
+      height: 300px;
     }
 
-    /* Board */
-    .board{
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap:12px;
-      margin-top:12px;
+    .btn:hover {
+      border-color: var(--military-gold);
+      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+      transform: translateY(-2px);
     }
-    .lane{
-      background: linear-gradient(180deg, rgba(18,13,9,.64), rgba(10,8,6,.54));
-      border:1px solid rgba(216,178,74,.2);
-      border-radius:14px;
-      padding:10px;
-      min-height:140px;
-      box-shadow: 0 12px 38px rgba(0,0,0,.4);
-    }
-    .laneHeader{
-      display:flex;
-      align-items:center;
-      gap:8px;
-      margin-bottom:10px;
-      padding-bottom:8px;
-      border-bottom:1px solid rgba(216,178,74,.15);
-    }
-    .laneTitle{
-      flex:1;
-      font-size:13px;
-      font-weight:600;
-      color:var(--gold2);
-      letter-spacing:.3px;
-    }
-    .laneCount{
-      padding:3px 9px;
-      background:rgba(216,178,74,.14);
-      border-radius:8px;
-      font-size:11px;
-      font-weight:700;
-      color:var(--gold);
-    }
-    .laneBody{min-height:80px}
 
-    /* Unit cards */
-    .unitCard{
-      background: linear-gradient(180deg, rgba(18,13,9,.8), rgba(10,8,6,.7));
-      border:1px solid rgba(216,178,74,.22);
-      border-radius:10px;
-      padding:8px;
-      margin-bottom:8px;
-      display:flex;
-      gap:6px;
-      align-items:center;
-      box-shadow: 0 6px 18px rgba(0,0,0,.35);
-      transition:.2s;
-      cursor:grab;
+    .btn span {
+      position: relative;
+      z-index: 1;
     }
-    .unitCard:active{cursor:grabbing}
-    .unitCard:hover{
-      border-color:rgba(216,178,74,.35);
-      box-shadow: 0 8px 24px rgba(0,0,0,.45);
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--military-gold), var(--gold-dark));
+      color: var(--bg-darker);
+      border-color: var(--military-gold);
+      font-weight: 700;
     }
-    .unitMain{flex:1}
-    .unitInput{
-      width:100%;
-      background:transparent;
-      border:0;
-      padding:4px 6px;
-      color:var(--text);
-      font-size:13px;
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, var(--gold-light), var(--military-gold));
+      box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
     }
-    .unitInput:focus{
-      outline:0;
-      box-shadow:none;
+
+    .btn-danger {
+      background: linear-gradient(135deg, rgba(200, 50, 50, 0.3), rgba(150, 30, 30, 0.3));
+      color: #ff6b6b;
+      border-color: rgba(200, 50, 50, 0.5);
     }
-    .unitBtns{display:flex; gap:4px}
-    .iconBtn{
-      padding:4px 8px;
-      background:rgba(0,0,0,.28);
-      border:1px solid rgba(216,178,74,.16);
-      border-radius:6px;
-      font-size:14px;
-      min-width:28px;
+
+    .btn-danger:hover {
+      background: linear-gradient(135deg, rgba(220, 60, 60, 0.4), rgba(170, 40, 40, 0.4));
+      border-color: rgba(220, 60, 60, 0.7);
     }
-    .iconBtn:hover{
-      background:rgba(0,0,0,.4);
-      border-color:rgba(216,178,74,.28);
+
+    /* لوحة التوزيع */
+    .distribution-board {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .lane {
+      background: rgba(0, 0, 0, 0.4);
+      border: 2px solid rgba(212, 175, 55, 0.3);
+      border-radius: 12px;
+      padding: 15px;
+      min-height: 180px;
+      transition: all 0.3s;
+    }
+
+    .lane:hover {
+      border-color: var(--military-gold);
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+    }
+
+    .lane-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    }
+
+    .lane-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--military-gold);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .lane-radar {
+      width: 16px;
+      height: 16px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lane-radar::before {
+      content: '';
+      width: 4px;
+      height: 4px;
+      background: var(--military-gold);
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .lane-radar::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      border: 1px solid var(--military-gold);
+      border-radius: 50%;
+      position: absolute;
+      animation: radarPing 2s infinite;
+    }
+
+    @keyframes radarPing {
+      0% {
+        transform: scale(0.5);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
+
+    .lane-count {
+      padding: 4px 10px;
+      background: rgba(212, 175, 55, 0.2);
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--military-gold);
+    }
+
+    .lane-body {
+      min-height: 100px;
+    }
+
+    /* بطاقات الوحدات */
+    .unit-card {
+      background: linear-gradient(135deg, rgba(30, 45, 30, 0.6), rgba(15, 25, 15, 0.6));
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: grab;
+      transition: all 0.3s;
+    }
+
+    .unit-card:active {
+      cursor: grabbing;
+    }
+
+    .unit-card:hover {
+      border-color: var(--military-gold);
+      box-shadow: 0 5px 20px rgba(212, 175, 55, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .unit-card.dragging {
+      opacity: 0.3;
+    }
+
+    .unit-input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      color: var(--text-light);
+      font-size: 13px;
+      padding: 5px;
+    }
+
+    .unit-input:focus {
+      outline: none;
+    }
+
+    .unit-actions {
+      display: flex;
+      gap: 5px;
+    }
+
+    .icon-btn {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 6px;
+      color: var(--military-gold);
+      cursor: pointer;
+      transition: all 0.3s;
+      font-size: 16px;
+    }
+
+    .icon-btn:hover {
+      background: rgba(212, 175, 55, 0.2);
+      border-color: var(--military-gold);
+    }
+
+    /* الملاحظات */
+    .hint {
+      margin-top: 12px;
+      padding: 10px;
+      font-size: 12px;
+      color: rgba(212, 175, 55, 0.7);
+      background: rgba(0, 0, 0, 0.3);
+      border-left: 3px solid rgba(212, 175, 55, 0.4);
+      border-radius: 6px;
+      line-height: 1.6;
+    }
+
+    .hint b {
+      color: var(--military-gold);
     }
 
     /* Toast */
-    .toast{
-      position:fixed;
-      bottom:24px;
-      left:50%;
-      transform:translateX(-50%) translateY(100px);
-      padding:12px 20px;
-      background: linear-gradient(180deg, var(--gold2), var(--gold));
-      color:var(--ink);
-      border-radius:14px;
-      font-size:14px;
-      font-weight:600;
-      box-shadow: 0 16px 48px rgba(0,0,0,.5);
-      z-index:1000;
-      opacity:0;
-      transition:.3s;
-      pointer-events:none;
-    }
-    .toast.show{
-      opacity:1;
-      transform:translateX(-50%) translateY(0);
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      padding: 15px 30px;
+      background: linear-gradient(135deg, var(--military-gold), var(--gold-dark));
+      color: var(--bg-darker);
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 700;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+      z-index: 10000;
+      opacity: 0;
+      transition: all 0.4s;
+      pointer-events: none;
     }
 
-    /* Sheet (mobile move) */
-    .sheetOverlay{
-      position:fixed;
-      inset:0;
-      background:rgba(0,0,0,.75);
-      backdrop-filter:blur(6px);
-      z-index:9000;
-      opacity:0;
-      pointer-events:none;
-      transition:.3s;
-      display:flex;
-      align-items:flex-end;
-      justify-content:center;
-      padding:16px;
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
     }
-    .sheetOverlay.show{
-      opacity:1;
-      pointer-events:all;
+
+    /* Sheet للموبايل */
+    .sheet-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 9000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 20px;
     }
-    .sheet{
-      width:100%;
-      max-width:560px;
-      background: linear-gradient(180deg, var(--card2), var(--card));
-      border:1px solid rgba(216,178,74,.28);
-      border-radius:18px 18px 0 0;
-      padding:18px;
-      box-shadow: 0 -20px 60px rgba(0,0,0,.7);
-      transform:translateY(100%);
-      transition:.3s;
+
+    .sheet-overlay.show {
+      opacity: 1;
+      pointer-events: all;
     }
-    .sheetOverlay.show .sheet{transform:translateY(0)}
-    .sheetTitle{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      margin-bottom:14px;
+
+    .sheet {
+      width: 100%;
+      max-width: 600px;
+      background: linear-gradient(135deg, rgba(30, 45, 30, 0.98), rgba(15, 25, 15, 0.98));
+      border: 2px solid var(--military-gold);
+      border-radius: 20px 20px 0 0;
+      padding: 25px;
+      box-shadow: 0 -25px 80px rgba(0, 0, 0, 0.8);
+      transform: translateY(100%);
+      transition: transform 0.3s;
     }
-    .sheetTitle h3{
-      margin:0;
-      font-size:16px;
-      color:var(--gold2);
+
+    .sheet-overlay.show .sheet {
+      transform: translateY(0);
     }
-    .sheetGrid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:10px;
+
+    .sheet-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+    }
+
+    .sheet-title {
+      margin: 0;
+      font-size: 18px;
+      color: var(--military-gold);
+      font-weight: 700;
+    }
+
+    .sheet-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
     }
 
     /* Responsive */
-    @media (max-width:980px){
-      .introTitle{font-size:36px}
-      .logoContainer{width:180px; height:180px}
+    @media (max-width: 1024px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .header-logo {
+        width: 60px;
+        height: 60px;
+      }
     }
 
-    @media (max-width:680px){
-      .introTitle{font-size:28px}
-      .logoContainer{width:150px; height:150px}
-      .loadingBar{width:300px}
+    @media (max-width: 768px) {
+      .intro-title {
+        font-size: 40px;
+      }
+      
+      .intro-logo-wrapper {
+        width: 200px;
+        height: 200px;
+      }
+      
+      .header-title {
+        font-size: 22px;
+      }
+      
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      
+      .distribution-board {
+        grid-template-columns: 1fr;
+      }
+      
+      .patch-notes {
+        padding: 30px 25px;
+      }
+      
+      .patch-title {
+        font-size: 28px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .intro-title {
+        font-size: 32px;
+      }
+      
+      .intro-logo-wrapper {
+        width: 160px;
+        height: 160px;
+      }
+      
+      .loading-bar {
+        width: 100%;
+      }
+      
+      .header-title {
+        font-size: 18px;
+      }
+      
+      .card {
+        padding: 20px;
+      }
+      
+      .sheet-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, var(--military-gold), var(--gold-dark));
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(180deg, var(--gold-light), var(--military-gold));
     }
 
   </style>
 </head>
 <body>
 
-  <!-- Intro الديناميكي الخرافي -->
-  <div id="intro" class="introOverlay">
-    <!-- النجوم المتحركة -->
-    <div class="introStars" aria-hidden="true">
-      <div class="introStar" style="top: 10%; left: 15%;"></div>
-      <div class="introStar" style="top: 20%; left: 80%; animation-delay: 0.5s;"></div>
-      <div class="introStar" style="top: 70%; left: 25%; animation-delay: 1s;"></div>
-      <div class="introStar" style="top: 80%; left: 70%; animation-delay: 1.5s;"></div>
-      <div class="introStar" style="top: 30%; left: 50%; animation-delay: 2s;"></div>
-      <div class="introStar" style="top: 60%; left: 90%; animation-delay: 2.5s;"></div>
+  <!-- الخلفية المتحركة -->
+  <div class="animated-background">
+    <div class="grid-lines"></div>
+    <div class="military-particles" id="particles"></div>
+    <div class="radar-waves">
+      <div class="radar-wave"></div>
+      <div class="radar-wave"></div>
+      <div class="radar-wave"></div>
+      <div class="radar-wave"></div>
     </div>
+  </div>
 
-    <!-- الشبكة السداسية -->
-    <div class="hexGrid" aria-hidden="true"></div>
-
-    <!-- موجات الرادار -->
-    <div class="radarWaves" aria-hidden="true">
-      <div class="radarWave"></div>
-      <div class="radarWave"></div>
-      <div class="radarWave"></div>
-      <div class="radarWave"></div>
+  <!-- INTRO الديناميكي -->
+  <div class="intro-overlay" id="introOverlay">
+    <div class="intro-bg-effects">
+      <div class="crosshair-lines">
+        <div class="crosshair-h"></div>
+        <div class="crosshair-v"></div>
+      </div>
+      <div class="intro-ripples">
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+      </div>
     </div>
-
-    <!-- البطاقة المركزية -->
-    <div class="introCard">
-      <!-- الليزر المتحرك -->
-      <div class="laserSweep" aria-hidden="true"></div>
-
-      <!-- الزخارف في الزوايا -->
-      <div class="cornerDecor topLeft" aria-hidden="true"></div>
-      <div class="cornerDecor topRight" aria-hidden="true"></div>
-      <div class="cornerDecor bottomLeft" aria-hidden="true"></div>
-      <div class="cornerDecor bottomRight" aria-hidden="true"></div>
-
-      <!-- المحتوى -->
-      <div class="introContent">
-        <!-- شعار الجيش مع الحلقات الدوارة -->
-        <div class="logoContainer">
-          <div class="orbitRing"></div>
-          <div class="orbitRing"></div>
-          <div class="orbitRing"></div>
-          <img src="./army-logo-new.png" alt="شعار الجيش" class="armyLogo">
+    
+    <div class="intro-card">
+      <div class="intro-laser"></div>
+      
+      <div class="intro-content">
+        <div class="intro-logo-wrapper">
+          <div class="orbit-ring"></div>
+          <div class="orbit-ring"></div>
+          <div class="orbit-ring"></div>
+          <div class="orbit-ring"></div>
+          <img src="./army-logo-new.png" alt="شعار الجيش" class="intro-logo">
         </div>
-
-        <!-- العنوان الرئيسي -->
-        <h1 class="introTitle">تحديث مركز العمليات للجيش</h1>
-
-        <!-- العنوان الفرعي -->
-        <p class="introSubtitle">Sandy State Army • Military Unit</p>
-
-        <!-- شريط التحميل -->
-        <div class="loadingBar">
-          <div class="loadingBarFill"></div>
+        
+        <h1 class="intro-title">تحديث مركز العمليات للجيش</h1>
+        <p class="intro-subtitle">Sandy State Army • Military Unit</p>
+        
+        <div class="loading-bar">
+          <div class="loading-fill"></div>
         </div>
-
-        <!-- رسالة الانتظار -->
-        <p class="introHint">
-          يتم التحميل... سيختفي تلقائياً خلال <b>4 ثوانٍ</b> أو اضغط للإغلاق
+        
+        <p class="intro-message">
+          يتم تحميل النظام... سيختفي تلقائياً خلال <b>4 ثوانٍ</b> أو اضغط للإغلاق
         </p>
       </div>
     </div>
   </div>
 
-  <div class="wrap">
-    <header class="topbar">
-      <img src="./army-logo-new.png" alt="Army Logo" class="topLogo" />
-      <div class="topTitles">
-        <h1 class="topTitle">تحديث مركز العمليات للجيش</h1>
+  <!-- PATCH NOTES -->
+  <div class="patch-notes-overlay" id="patchNotesOverlay">
+    <div class="patch-notes">
+      <div class="patch-header">
+        <span class="patch-badge">📋 Patch Notes</span>
+        <h2 class="patch-title">تحديثات جديدة</h2>
+        <p class="patch-version">الإصدار 2.0 • فبراير 2026</p>
       </div>
-      <img src="./army-logo-new.png" alt="Army Logo" class="topLogo" />
+      
+      <div class="patch-content">
+        <div class="patch-section">
+          <h3 class="patch-section-title">
+            <span class="patch-icon">✨</span>
+            التحسينات الرئيسية
+          </h3>
+          <ul class="patch-list">
+            <li class="patch-item">تم تغيير المقدمة (Intro) وإضافة شعار الجيش الجديد</li>
+            <li class="patch-item">تم إعادة تصميم الموقع بالكامل بشكل فخم ومناسب للجيش</li>
+            <li class="patch-item">خلفية ديناميكية متحركة مع تأثيرات عسكرية احترافية</li>
+          </ul>
+        </div>
+
+        <div class="patch-section">
+          <h3 class="patch-section-title">
+            <span class="patch-icon">📍</span>
+            تحديث أسماء المناطق
+          </h3>
+          <ul class="patch-list">
+            <li class="patch-item">نقاط وحدات اعلى الاوتيل</li>
+            <li class="patch-item">نقاط وحدات بوليتو</li>
+            <li class="patch-item">نقاط وحدات لوس</li>
+            <li class="patch-item">نقاط وحدات ساندي</li>
+            <li class="patch-item">نقاط وحدات الكهرب</li>
+            <li class="patch-item">نقاط وحدات ثغرة قرابسيد</li>
+            <li class="patch-item">نقاط وحدات ثغرة البحيرة</li>
+          </ul>
+        </div>
+
+        <div class="patch-section">
+          <h3 class="patch-section-title">
+            <span class="patch-icon">⚡</span>
+            تحسينات الأداء
+          </h3>
+          <ul class="patch-list">
+            <li class="patch-item">تم تحسين سلاسة الموقع وسرعة الاستجابة</li>
+            <li class="patch-item">تسهيل أكثر في استخدام النظام والتنقل بين الأقسام</li>
+            <li class="patch-item">تحسين تجربة السحب والإفلات للوحدات</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="patch-footer">
+        <button class="patch-close" id="patchCloseBtn">
+          متابعة إلى النظام
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- المحتوى الرئيسي -->
+  <div class="main-container">
+    <!-- الهيدر -->
+    <header class="header">
+      <div class="header-left">
+        <img src="./army-logo-new.png" alt="شعار الجيش" class="header-logo">
+      </div>
+      <div class="header-center">
+        <h1 class="header-title">تحديث مركز العمليات للجيش</h1>
+        <p class="header-subtitle">Sandy State Army • Military Operations Center</p>
+      </div>
+      <div class="header-right">
+        <img src="./army-logo-new.png" alt="شعار الجيش" class="header-logo">
+      </div>
     </header>
 
-    <main class="grid" style="margin-top:14px">
+    <!-- الشبكة الرئيسية -->
+    <div class="content-grid">
+      <!-- القسم الأيسر - النموذج -->
       <section class="card">
-        <h2>نموذج التحديث</h2>
+        <h2 class="card-title">
+          <span class="card-icon">📋</span>
+          نموذج التحديث
+        </h2>
 
-        <div class="row">
-          <div class="field">
-            <label>اسم العمليات</label>
-            <input id="opsName" type="text" placeholder="مثال: عبدالله | O-1" />
+        <div class="form-row">
+          <div class="form-field">
+            <label class="form-label">اسم العمليات</label>
+            <input type="text" class="form-input" id="opsName" placeholder="مثال: عبدالله | O-1">
           </div>
-          <div class="field">
-            <label>نائب العمليات</label>
-            <input id="opsDeputy" type="text" placeholder="مثال: محمد | O-2" />
+          <div class="form-field">
+            <label class="form-label">نائب العمليات</label>
+            <input type="text" class="form-input" id="opsDeputy" placeholder="مثال: محمد | O-2">
           </div>
         </div>
 
-        <div class="row" style="margin-top:10px">
-          <div class="field">
-            <label>قيادات</label>
-            <textarea id="leaders" placeholder="كل اسم في سطر..."></textarea>
+        <div class="form-row">
+          <div class="form-field">
+            <label class="form-label">قيادات</label>
+            <textarea class="form-textarea" id="leaders" placeholder="كل اسم في سطر..."></textarea>
           </div>
-          <div class="field">
-            <label>ضباط</label>
-            <textarea id="officers" placeholder="كل اسم في سطر..."></textarea>
-          </div>
-        </div>
-
-        <div class="row" style="margin-top:10px">
-          <div class="field">
-            <label>ضباط صف</label>
-            <textarea id="ncos" placeholder="كل اسم في سطر..."></textarea>
-          </div>
-          <div class="field">
-            <label>مسؤول الفترة</label>
-            <textarea id="periodOfficer" placeholder="كل اسم في سطر..."></textarea>
+          <div class="form-field">
+            <label class="form-label">ضباط</label>
+            <textarea class="form-textarea" id="officers" placeholder="كل اسم في سطر..."></textarea>
           </div>
         </div>
 
-        <div style="margin-top:14px">
-          <h2 style="margin-bottom:10px">توزيع الوحدات (سحب وإفلات)</h2>
-          <div class="hint">اسحب البطاقات بين النقاط. تقدر تضيف وحدات جديدة وتكتب أسماءها داخل البطاقة.</div>
+        <div class="form-row">
+          <div class="form-field">
+            <label class="form-label">ضباط صف</label>
+            <textarea class="form-textarea" id="ncos" placeholder="كل اسم في سطر..."></textarea>
+          </div>
+          <div class="form-field">
+            <label class="form-label">مسؤول الفترة</label>
+            <textarea class="form-textarea" id="periodOfficer" placeholder="كل اسم في سطر..."></textarea>
+          </div>
+        </div>
 
-          <div class="btns">
-            <button id="btnAddUnit" class="primary">إضافة وحدة جديدة</button>
-            <button id="btnCopyReport">نسخ التقرير</button>
-            <button id="btnReset" class="danger">إعادة تعيين</button>
+        <div style="margin-top: 25px;">
+          <h2 class="card-title" style="margin-bottom: 15px;">
+            <span class="card-icon">🎯</span>
+            توزيع الوحدات (سحب وإفلات)
+          </h2>
+          
+          <div class="hint">
+            اسحب البطاقات بين النقاط المختلفة. يمكنك إضافة وحدات جديدة وكتابة أسمائها داخل البطاقة.
           </div>
 
-          <div style="margin-top:12px" id="reviewBox">
-            <div class="field">
-              <label>النص المستخرج (للمراجعة)</label>
-              <textarea id="extractedList" placeholder="الصق الأسماء هنا — كل اسم في سطر..."></textarea>
+          <div class="button-group">
+            <button class="btn btn-primary" id="btnAddUnit">
+              <span>➕ إضافة وحدة جديدة</span>
+            </button>
+            <button class="btn" id="btnCopyReport">
+              <span>📄 نسخ التقرير</span>
+            </button>
+            <button class="btn btn-danger" id="btnReset">
+              <span>🔄 إعادة تعيين</span>
+            </button>
+          </div>
+
+          <div style="margin-top: 20px;">
+            <div class="form-field">
+              <label class="form-label">النص المستخرج (للمراجعة)</label>
+              <textarea class="form-textarea" id="extractedList" placeholder="الصق الأسماء هنا — كل اسم في سطر..."></textarea>
             </div>
-            <div class="btns" style="margin-top:10px">
-              <button id="btnAddExtracted" class="primary">إضافة الكل إلى اللوحة</button>
+            <div class="button-group">
+              <button class="btn btn-primary" id="btnAddExtracted">
+                <span>📥 إضافة الكل إلى اللوحة</span>
+              </button>
+            </div>
+            <div class="hint">
+              زر "إضافة الكل إلى اللوحة" ينقل العناصر مباشرة إلى <b>نقاط وحدات اعلى الاوتيل</b>.
             </div>
           </div>
 
-          <div class="board" id="board" style="margin-top:12px"></div>
+          <div class="distribution-board" id="board"></div>
         </div>
-
       </section>
 
+      <!-- القسم الأيمن - التسليم والاستلام -->
       <aside class="card">
-        <h2>التسليم والاستلام</h2>
+        <h2 class="card-title">
+          <span class="card-icon">🔄</span>
+          التسليم والاستلام
+        </h2>
 
-        <div class="field">
-          <label>الملاحظات</label>
-          <textarea id="notes" placeholder="اكتب الملاحظات هنا..."></textarea>
+        <div class="form-field">
+          <label class="form-label">الملاحظات</label>
+          <textarea class="form-textarea" id="notes" placeholder="اكتب الملاحظات هنا..."></textarea>
         </div>
 
-        <div class="row" style="margin-top:10px">
-          <div class="field">
-            <label>وقت الاستلام</label>
-            <input id="recvTime" type="text" placeholder="—" />
+        <div class="form-row">
+          <div class="form-field">
+            <label class="form-label">وقت الاستلام</label>
+            <input type="text" class="form-input" id="recvTime" placeholder="—">
           </div>
-          <div class="field">
-            <label>وقت التسليم</label>
-            <input id="handoverTime" type="text" placeholder="—" />
+          <div class="form-field">
+            <label class="form-label">وقت التسليم</label>
+            <input type="text" class="form-input" id="handoverTime" placeholder="—">
           </div>
         </div>
 
-        <div class="field" style="margin-top:10px">
-          <label>تم التسليم إلى</label>
-          <input id="handoverTo" type="text" placeholder="الاسم..." />
+        <div class="form-field">
+          <label class="form-label">تم التسليم إلى</label>
+          <input type="text" class="form-input" id="handoverTo" placeholder="الاسم...">
         </div>
 
-        <div class="btns">
-          <button id="btnStart" class="primary">بدء استلام</button>
-          <button id="btnEnd">إنهاء استلام</button>
+        <div class="button-group">
+          <button class="btn btn-primary" id="btnStart">
+            <span>▶️ بدء استلام</span>
+          </button>
+          <button class="btn" id="btnEnd">
+            <span>⏹️ إنهاء استلام</span>
+          </button>
         </div>
 
-        <div class="hint" style="margin-top:10px">
+        <div class="hint">
           تلميح: "بدء استلام" يعبّي وقت الاستلام تلقائيًا، و"إنهاء استلام" يعبّي وقت التسليم.
         </div>
 
-        <div style="margin-top:12px">
-          <div class="field">
-            <label>النموذج النهائي (يتحدث تلقائيًا)</label>
-            <textarea id="finalText" class="big" placeholder="سيظهر هنا التقرير النهائي..."></textarea>
+        <div style="margin-top: 25px;">
+          <div class="form-field">
+            <label class="form-label">النموذج النهائي (يتحدث تلقائيًا)</label>
+            <textarea class="form-textarea large" id="finalText" placeholder="سيظهر هنا التقرير النهائي..."></textarea>
           </div>
-          <div class="hint">يتحدث تلقائيًا من الحقول + توزيع الوحدات. تقدر تعدله يدويًا قبل النسخ.</div>
+          <div class="hint">
+            يتحدث تلقائيًا من الحقول + توزيع الوحدات. يمكنك تعديله يدويًا قبل النسخ.
+          </div>
         </div>
       </aside>
-    </main>
+    </div>
   </div>
 
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
 
-  <!-- Mobile Move Sheet -->
-  <div id="sheetOverlay" class="sheetOverlay" aria-hidden="true">
-    <div class="sheet" role="dialog" aria-label="move unit">
-      <div class="sheetTitle">
-        <h3>نقل الوحدة إلى...</h3>
-        <button id="sheetClose" class="iconBtn danger" type="button" aria-label="close">×</button>
+  <!-- Sheet للموبايل -->
+  <div class="sheet-overlay" id="sheetOverlay">
+    <div class="sheet">
+      <div class="sheet-header">
+        <h3 class="sheet-title">نقل الوحدة إلى...</h3>
+        <button class="icon-btn" id="sheetClose">✕</button>
       </div>
-      <div id="sheetGrid" class="sheetGrid"></div>
-      <div class="hint" style="margin-top:10px">ملاحظة: لو أنت على كمبيوتر، تقدر تسحب وإفلات مباشرة.</div>
+      <div class="sheet-grid" id="sheetGrid"></div>
+      <div class="hint">
+        ملاحظة: إذا كنت على الكمبيوتر، يمكنك السحب والإفلات مباشرة.
+      </div>
     </div>
   </div>
 
   <script src="./app.js"></script>
+  
   <script>
-    // إخفاء الـ intro بعد 4 ثوانٍ أو عند النقر
-    document.addEventListener('DOMContentLoaded', () => {
-      const intro = document.getElementById('intro');
-      
-      // إخفاء تلقائي بعد 4 ثوانٍ
-      setTimeout(() => {
-        intro.classList.add('fadeOut');
-        setTimeout(() => intro.remove(), 800);
-      }, 4000);
+    // إنشاء الجزيئات المتحركة
+    const particlesContainer = document.getElementById('particles');
+    for (let i = 0; i < 30; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      particle.style.left = Math.random() * 100 + '%';
+      particle.style.animationDelay = Math.random() * 15 + 's';
+      particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+      particlesContainer.appendChild(particle);
+    }
 
-      // إخفاء عند النقر
-      intro.addEventListener('click', () => {
-        intro.classList.add('fadeOut');
-        setTimeout(() => intro.remove(), 800);
-      });
+    // التحكم في الـ Intro
+    const introOverlay = document.getElementById('introOverlay');
+    const patchNotesOverlay = document.getElementById('patchNotesOverlay');
+    const patchCloseBtn = document.getElementById('patchCloseBtn');
+
+    // إخفاء الـ Intro بعد 4 ثوانٍ
+    setTimeout(() => {
+      introOverlay.classList.add('hidden');
+      // عرض Patch Notes بعد اختفاء الـ Intro
+      setTimeout(() => {
+        patchNotesOverlay.classList.add('show');
+      }, 500);
+    }, 4000);
+
+    // إخفاء الـ Intro عند النقر
+    introOverlay.addEventListener('click', () => {
+      introOverlay.classList.add('hidden');
+      setTimeout(() => {
+        patchNotesOverlay.classList.add('show');
+      }, 500);
+    });
+
+    // إغلاق Patch Notes
+    patchCloseBtn.addEventListener('click', () => {
+      patchNotesOverlay.classList.remove('show');
+    });
+
+    // إغلاق Patch Notes بالنقر خارجها
+    patchNotesOverlay.addEventListener('click', (e) => {
+      if (e.target === patchNotesOverlay) {
+        patchNotesOverlay.classList.remove('show');
+      }
     });
   </script>
 </body>
